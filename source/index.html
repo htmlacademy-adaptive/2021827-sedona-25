@@ -1,145 +1,165 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
 
-<body>
-  <header>
+<body class="page__body">
+  <header class="main-header">
     <!-- Навигация с картинкой и кнопкой  -->
     <!-- Кнопку меню добавить фоном в css -->
     <div>
-      <a>
+      <a class="main-header__logo">
         <img src="./img/mobile/header-logo.svg" width="185" height="96" alt=Логотип.>
       </a>
-      <a href="#" type="button" alt="Кнопка меню.">Кнопка меню</a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
     <!-- Список меню  -->
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Гланая</a>
-        </li>
-        <li>
-          <a href="#">Фото и Видео</a>
-        </li>
-        <li>
-          <a href="#">Форма отзыва</a>
-        </li>
-        <li>
-          <a href="#">html Academy</a>
-        </li>
-      </ul>
+    <nav class="main-nav">
+      <!-- Div центровщик -->
+      <div class="main-nav__wrapper">
+        <!-- Элемент c миксом -->
+        <ul class="main-nav__list site-list">
+          <!-- Модификатор главной ( подчеркивание ) -->
+          <li class="site-list__item site-list__item--current">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фото и Видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">html Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main>
+  <main class="main-container">
     <!--  Заголовок первого уровня (скрыт) и фоновый background и svg -->
     <div>
-      <h1>Туристический городок Седона.</h1>
+      <h1 class="visually-hidden">Туристический городок Седона.</h1>
       <img src="./img/mobile//welcome-sedona.svg" width="282" height="214" alt="Welcome to Sedona.">
     </div>
     <!--  Заголовок 2 уровня  -->
-    <section>
-      <div>
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    <section class="presentation">
+      <!-- Обертка для центрирования -->
+      <div class="presentation__wrapper">
+        <h2 class="presentation__slogan">Седона — небольшой<br>городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p class="presentation__intro">Рассмотрим 5 причин, по которым<br> Седона круче, чем Гранд-Каньон!</p>
       </div>
       <!-- Списки -->
-      <ul>
-        <li>
-          <div">
-            <div>
-              <h3>Настоящий городок</h3>
-              <span>— №1 —</span>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+      <ul class="services-list">
+        <li class="services__wrapper">
+          <!-- модификатор blue  -->
+          <div class="descriprion__item--blue">
+            <div class="description__list">
+              <h3 class="description__title description__title--blue">Настоящий городок</h3>
+              <span class="description__number description__title--blue">— №1 —</span>
+              <p class="description__information description__title--blue">Седона — не аттракцион для туристов, там
+                течёт своя жизнь</p>
             </div>
             <img src="./img/mobile/home-foto.jpg" width="320" height="260" alt="Дом.">
-            </div>
-            <ul>
-              <li>
-                <h4>Жилье</h4>
-                <p> Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li>
-                <h4>Еда</h4>
-                <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-                </p>
-              </li>
-              <li>
-                <h4>Сувениры</h4>
-                <p>Не только китайского,но и настоящего местного производства!</p>
-              </li>
-            </ul>
-        </li>
-        <li>
-          <div>
-            <h3>Там есть мост дьявола</h3>
-            <span>— №2 —</span>
-            <p>Да, по нему можно пройти!Если вы осмелитесь, разумеется</p>
           </div>
-          <img src="./img/mobile/canyon-foto.jpg" width="320" height="260" alt="фото каньона.">
+          <ul class="services__detail">
+            <li class="services__detail detail-item">
+              <h4 class="services__title">Жилье</h4>
+              <p class="services__information"> Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="services__detail detail-item">
+              <h4 class="services__title">Еда</h4>
+              <p class="services__infromation">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+            <li class="services__detail detail-item">
+              <h4 class="services__title">Сувениры</h4>
+              <p class="services__information">Не только китайского,но и настоящего местного производства!</p>
+            </li>
+          </ul>
         </li>
         <li>
-          <h3>Небольшая площадь</h3>
-          <span>— №3 —</span>
-          <p>Все достопримечательности находятся очень близко</p>
+          <div class="description__item--blue">
+            <h3 class="description__title description__title--blue">Там есть мост дьявола</h3>
+            <span class="description__number description__title--blue">— №2 —</span>
+            <p class="description__information description__title--blue">Да, по нему можно пройти!Если вы осмелитесь,
+              разумеется</p>
+          </div>
+          <!-- Модификация ( картинка меняет свое местоположение) -->
+          <img class="decription__item--left" src="#" width="320" height="260" alt="фото каньона.">
+          <img class="decription__item--bottom" src="./img/mobile/canyon-foto.jpg" width="320" height="260"
+            alt="фото каньона.">
+        </li>
+        <li class="group__services">
+          <h3 class="group__title">Небольшая площадь</h3>
+          <span class="group__number">— №3 —</span>
+          <p class="group__information">Все достопримечательности находятся очень близко</p>
         </li>
         <li>
-          <h3>Красивая дорога</h3>
-          <span>— №4 —</span>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <h3 class="group__title">Красивая дорога</h3>
+          <span class="group__number">— №4 —</span>
+          <p class="group__information">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li>
-          <h3>Мало туристов</h3>
-          <span>— №5 —</span>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
+          <h3 class="group__title">Мало туристов</h3>
+          <span class="group__number">— №5 —</span>
+          <p class="group__information">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам
+    <section class="hotel__search">
+      <h2 class="hotel__title">Заинтересовались?</h2>
+      <p class="hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам
         лучшие предложения гостиниц в Седоне</p>
-      <button type="button">найти гостиницу</button>
+      <button class="hotel__button" type="button">найти гостиницу</button>
     </section>
     <!-- Maps -->
-    <section>
-      <img src="./img/mobile/map-mobile.jpg" width="320" height="350" alt="Мобильная карта.">
+    <section class=maps__hotel>
+      <div class="maps__wrapper">
+        <img src="./img/mobile/map-mobile.jpg" width="320" height="350" alt="Мобильная карта.">
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper"></div>
     <a>#VISITSEDONA</a>
     <!-- Иконки сделать фоном в сss-->
-    <ul>
-      <li>
-        <a>
-          <span>Вконтакте.</span>
-        </a>
-      </li>
-      <li>
-        <a>
-          <span>Телеграм.</span>
-        </a>
-      </li>
-      <li>
-        <a>
-          <span>Ютуб.</span>
-        </a>
-      </li>
-    </ul>
-    <div>
-      <span>Разработано</span>
-      <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
-          fill="#000" />
-      </svg>
+    <div class="main-footer__hashtag">
+      <a class="hashtag__name">#VISITSEDONA</a>
+    </div>
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">Мы в Телеграм
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__academy academy">
+      <b class="academy__text">Разработано</b>
+      <a class="academy__link" href="https://htmlacademy.ru">
+        <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+            fill="#000" />
+        </svg>
+      </a>
     </div>
   </footer>
-
 </body>
 
 </html>
