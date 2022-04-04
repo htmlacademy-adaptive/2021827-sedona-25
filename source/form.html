@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div>
+    <div class="page-header__wrapper">
       <a class="main-header__logo">
         <img src="./img/mobile/header-logo.svg" width="185" height="96" alt="Логотип." />
       </a>
@@ -43,156 +43,158 @@
   </header>
   <main class="main-container">
     <div class="main-container__wrapper">
-      <h1 class="visually-hidden">Туристический городок седона</h1>
       <img src="./img/mobile/sedona-catalog.svg" width="229" height="39px" alt="Sedona." />
     </div>
     <section class="feedback">
       <div class="feedback__wrapper">
-        <h2 class="feedback__slogan">Оставьте свой отзыв</h2>
+        <h1 class="feedback__slogan">Оставьте свой отзыв</h1>
         <p class="feedback__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
       </div>
     </section>
     <section class="personal-information">
-      <div class="personal_information__wrapper">
-        <h2 class="personal__title">Представьтесь:</h2>
-        <label class="personal__naming" for="auth-record">ИМЯ*:</label>
-        <div class="personal__wrapper">
-          <input class="personal__name" type="text" id="auth-record" name="auth-record" required placeholder="Пётр">
-        </div>
-      </div>
-      <div class="personal_information__wrapper">
-        <label class="personal__naming" for="auth-record">ФАМИЛИЯ*:</label>
-        <div class="personal__wrapper">
-          <input class="personal__name" type="text" id="auth-record" name="auth-record" required placeholder="Пустота">
-        </div>
-      </div>
-      <div class="personal_information__wrapper">
-        <label class="personal__naming" for="auth-record">Отчество:</label>
-        <div class="personal__wrapper">
-          <input class="personal__name" type="text" id="auth-record" name="auth-record" required
-            placeholder="Викторович">
-        </div>
-      </div>
-    </section>
-    <section class="contact__information">
-      <div class="contact_information__wrapper">
-        <h2 class="contact__title">Контактная информация:</h2>
-        <label class="contact__naming" for="auth-record">Контактный телефон*:</label>
-        <div class="contatct__wrapper">
-          <input class="contact__name" type="text" id="auth-record" name="auth-record" required
-            placeholder="Введите телефон">
-          <button class="contact__phone" type="button" aria-label="телефон." value="">
-            <span class="visually-hidden">Кнопка Телефона</span>
-          </button>
-        </div>
-      </div>
-      <div class="contact_information__wrapper">
-        <label class="contact__naming" for="auth-record">Электронная почта*:</label>
-        <div class="contact__wrapper">
-          <input class="contact__name" type="text" id="auth-record" name="auth-record" required
-            placeholder="Введите e-mail">
-          <button class="contact__mail" type="button" aria-label="почта." value="">
-            <span class="visually-hidden">Кнопка Почты</span>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="impression">
-      <div class="impression__wrapper">
-        <h2 class="impression__header">Ваше Общее впечатление:</h2>
-        <ul class="impression__list">
-          <li class="impression__item">
-            <label class="impression__control">
-              <input class="visually-hidden impression__control-input" type="radio" name="hotel-group." value="hotel"
-                checked>
-              <span class="impression__control-mark"></span>
-              <span class="impression__control-label">Скорее положительное</span>
-            </label>
-          </li>
-          <li class="impression__item">
-            <label class="impression__control">
-              <input class="visually-hidden impression__control-input" type="radio" name="hotel-group." value="motel">
-              <span class="impression__control-mark"></span>
-              <span class="impression__control-label">Скорее отрицательное</span>
-            </label>
-          </li>
-          <li class="impression__item">
-            <label class="impression__control">
-              <input class="visually-hidden impression__control-input" type="radio" name="hotel-group."
-                value="apartments">
-              <span class="impression__control-mark"></span>
-              <span class="impression__control-label">Затрудняюсь ответить</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-      <div class="visited-attraction">
-        <div class="visited__wrapper">
-          <h2 class="visited__header">Посещенные Достопримечательности:</h2>
-          <ul class="visited__list">
-            <li class="visited__item">
-              <label class="visited__control">
-                <input class="visually-hidden visited__control-input" type="checkbox" name="bridge." value="hotel"
-                  checked>
-                <span class="visited__control-mark"></span>
-                <span class="visited__control-label">Мост Дьявола</span>
-              </label>
-            </li>
-            <li class="visited__item">
-              <label class="visited__control">
-                <input class="visually-hidden vosited__control-input" type="checkbox" name="montain." value="motel"
-                  checked>
-                <span class="visited__control-mark"></span>
-                <span class="visited__control-label">Гора-Колокол</span>
-              </label>
-            </li>
-            <li class="visited__item">
-              <label class="visited__control">
-                <input class="visually-hidden visited__control-input" type="checkbox" name="park." value="apartments"
-                  checked>
-                <span class="visited__control-mark"></span>
-                <span class="visited__control-label">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="visited__item">
-              <label class="visited__control">
-                <input class="visually-hidden visited__control-input" type="checkbox" name="red-rocks."
-                  value="apartments">
-                <span class="visited__control-mark"></span>
-                <span class="visited__control-label">Красные скалы</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="comment">
-      <h2 class="comment__header">Опишите свои эмоции:</h2>
-      <p class="comment__form">
-        <label for="comment"></label>
-        <textarea rows="7" name="comment" id="comment">Опишите подробно все свои восторги</textarea>
-      </p>
-      <form class="comment__form" action="https://echo.htmlacademy.ru/" method="post">
-        <button class="comment__button" type="submit">отправить отзыв</button>
+      <form class="personal__filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="personal__form">
+          <div class="form__information-wrapper">
+            <legend class="form__title">Представьтесь:</legend>
+            <label class="form__naming" for="auth-record">ИМЯ*:</label>
+            <div class="form__wrapper">
+              <input class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Пётр">
+            </div>
+          </div>
+          <div class="form_information-wrapper">
+            <label class="form__naming" for="auth-record">ФАМИЛИЯ*:</label>
+            <div class="form__wrapper">
+              <input class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Пустота">
+            </div>
+          </div>
+          <div class="form__information-wrapper">
+            <label class="form__naming" for="auth-record">Отчество:</label>
+            <div class="form__wrapper">
+              <input class="form__name" type="text" id="auth-record" name="auth-record" required
+                placeholder="Викторович">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="personal__form-contacts">
+          <div class="form-contacts__wrapper">
+            <legend class="form-contacts__title">Контактная информация:</legend>
+            <label class="form-contacts__naming" for="auth-record">Контактный телефон*:</label>
+            <div class="form-contacts__wrapper">
+              <input class="form-contacts__name" type="text" id="auth-record" name="auth-record" required
+                placeholder="Введите телефон">
+              <button class="form-contacts__phone" type="button" aria-label="телефон." value="">
+                <span class="visually-hidden">Кнопка Телефона</span>
+              </button>
+            </div>
+          </div>
+          <div class="form-contacts__wrapper">
+            <label class="form-contacts__naming" for="auth-record">Электронная почта*:</label>
+            <div class="form-contacts__wrapper">
+              <input class="form-contacts__name" type="text" id="auth-record" name="auth-record" required
+                placeholder="Введите e-mail">
+              <button class="form-contacts__mail" type="button" aria-label="почта." value="">
+                <span class="visually-hidden">Кнопка Почты</span>
+              </button>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="personal__impression">
+          <div class="impression__wrapper">
+            <legend class="impression__header">Ваше Общее впечатление:</legend>
+            <ul class="impression__list">
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="visually-hidden impression__control-input" type="radio" name="hotel-group."
+                    value="hotel" checked>
+                  <span class="impression__control-mark"></span>
+                  <span class="impression__control-label">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="visually-hidden impression__control-input" type="radio" name="hotel-group."
+                    value="motel">
+                  <span class="impression__control-mark"></span>
+                  <span class="impression__control-label">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="impression__item">
+                <label class="impression__control">
+                  <input class="visually-hidden impression__control-input" type="radio" name="hotel-group."
+                    value="apartments">
+                  <span class="impression__control-mark"></span>
+                  <span class="impression__control-label">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="personal__visited">
+          <div class="visited__attraction">
+            <div class="visited__wrapper">
+              <legend class="visited__header">Посещенные Достопримечательности:</legend>
+              <ul class="visited__list">
+                <li class="visited__item">
+                  <label class="visited__control">
+                    <input class="visually-hidden visited__control-input" type="checkbox" name="bridge." value="hotel"
+                      checked>
+                    <span class="visited__control-mark"></span>
+                    <span class="visited__control-label">Мост Дьявола</span>
+                  </label>
+                </li>
+                <li class="visited__item">
+                  <label class="visited__control">
+                    <input class="visually-hidden visited__control-input" type="checkbox" name="montain." value="motel"
+                      checked>
+                    <span class="visited__control-mark"></span>
+                    <span class="visited__control-label">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li class="visited__item">
+                  <label class="visited__control">
+                    <input class="visually-hidden visited__control-input" type="checkbox" name="park."
+                      value="apartments" checked>
+                    <span class="visited__control-mark"></span>
+                    <span class="visited__control-label">Слайд-парк</span>
+                  </label>
+                </li>
+                <li class="visited__item">
+                  <label class="visited__control">
+                    <input class="visually-hidden visited__control-input" type="checkbox" name="red-rocks."
+                      value="apartments">
+                    <span class="visited__control-mark"></span>
+                    <span class="visited__control-label">Красные скалы</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="personal__comment">
+          <legend class="comment__header">Опишите свои эмоции:</legend>
+          <p class="comment__wrapper">
+            <label for="comment"></label>
+            <textarea rows="7" name="comment" id="comment">Опишите подробно все свои восторги</textarea>
+          </p>
+          <form class="comment__form" action="https://echo.htmlacademy.ru/" method="post">
+            <button class="comment__button" type="submit">отправить отзыв</button>
+          </form>
+        </fieldset>
       </form>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper"></div>
-    <a>#VISITSEDONA</a>
     <!-- Иконки сделать фоном в сss-->
-    <div class="main-footer__hashtag">
-      <a class="hashtag__name">#VISITSEDONA</a>
-    </div>
-    <div class="main-footer__social social">
+    <a class="hashtag__name">#VISITSEDONA</a>
+    <div class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">Мы в Телеграме
+          <a class="social__link social__link--telegram" href="#">Мы в Телеграм
           </a>
         </li>
         <li class="social__item">
