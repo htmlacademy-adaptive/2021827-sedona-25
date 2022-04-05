@@ -56,43 +56,43 @@
         <p class="presentation__intro">Рассмотрим 5 причин, по которым<br> Седона круче, чем Гранд-Каньон!</p>
       </div>
       <!-- Списки -->
-      <ul class="presentation__services-list">
-        <li class="presentation__services-wrapper">
+      <ul class="presentation__list">
+        <li class="presentation__item presentation__item--blue">
           <!-- модификатор blue  -->
-          <div class="presentation__descriprion-item--blue">
-            <div class="presentation__description-list">
-              <h3 class="presentation__description-title presentation__description-title--blue">Настоящий городок</h3>
-              <span class="presentation__description-number presentation__description-title--blue">— №1 —</span>
-              <p class="presentation__description-information presentation__description-title--blue">Седона — не
+          <div class="presentation__item-wrapper--blue">
+            <div class="presentation__container">
+              <h3 class="presentation__title">Настоящий городок</h3>
+              <span class="presentation__number">— №1 —</span>
+              <p class="presentation__information">Седона — не
                 аттракцион для туристов, там
                 течёт своя жизнь</p>
             </div>
             <img src="./img/mobile/home-foto.jpg" width="320" height="260" alt="Дом.">
           </div>
-          <ul class="presentation__services-detail">
-            <li class="presentation__services-detail presentation__detail-item">
-              <h4 class="presentation__services-title">Жилье</h4>
-              <p class="presentation__services-information"> Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в кино!
+          <ul class="presentation__detail">
+            <li class="presentation__detail-item presentation__detail-item--1">
+              <h4 class="presentation__title">Жилье</h4>
+              <p class="presentation__information"> Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в кино!
               </p>
             </li>
-            <li class="presentation__services-detail presentation__detail-item">
-              <h4 class="presentation__services-title">Еда</h4>
-              <p class="presentation__services-infromation">Всегда заказывайте топовый фирменный бургер, вы не
+            <li class="presentation__detail-item presentation__detail-item--2">
+              <h4 class="presentation__title">Еда</h4>
+              <p class="presentation__information">Всегда заказывайте топовый фирменный бургер, вы не
                 разочаруетесь!
               </p>
             </li>
-            <li class="presentation__services-detail presentation__detail-item">
-              <h4 class="presentation__services-title">Сувениры</h4>
-              <p class="presentation__services-information">Не только китайского,но и настоящего местного производства!
+            <li class="presentation__detail-item presentation__detail-item--3">
+              <h4 class="presentation__title">Сувениры</h4>
+              <p class="presentation__information">Не только китайского,но и настоящего местного производства!
               </p>
             </li>
           </ul>
         </li>
-        <li>
-          <div class="presentation__description-item--blue">
-            <h3 class="presentation__description-title presentation__description-title--blue">Там есть мост дьявола</h3>
-            <span class="presentation__description-number presentation__description-title--blue">— №2 —</span>
-            <p class="presentation__description-information presentation__description-title--blue">Да, по нему можно
+        <li class="presentation__item presentation__item-wrapper--blue">
+          <div class="presentation__container">
+            <h3 class="presentation__title">Там есть мост дьявола</h3>
+            <span class="presentation__number">— №2 —</span>
+            <p class="presentation__information">Да, по нему можно
               пройти!Если вы осмелитесь,
               разумеется</p>
           </div>
@@ -101,20 +101,20 @@
           <img class="presentation__decription-item--bottom" src="./img/mobile/canyon-foto.jpg" width="320" height="260"
             alt="фото каньона.">
         </li>
-        <li class="presentation__group-services">
-          <h3 class="presentation__group-title">Небольшая площадь</h3>
-          <span class="presentation__group-number">— №3 —</span>
-          <p class="presentation__group-information">Все достопримечательности находятся очень близко</p>
+        <li class="presentation__item presentation__item--4">
+          <h3 class="presentation__title">Небольшая площадь</h3>
+          <span class="presentation__number">— №3 —</span>
+          <p class="presentation__information">Все достопримечательности находятся очень близко</p>
         </li>
-        <li>
-          <h3 class="presentation__group-title">Красивая дорога</h3>
-          <span class="presentation__group-number">— №4 —</span>
-          <p class="presentation__group-information">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <li class="presentation__item presentation__item--5">
+          <h3 class="presentation__title">Красивая дорога</h3>
+          <span class="presentation__number">— №4 —</span>
+          <p class="presentation__information">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li>
-          <h3 class="presentation__group-title">Мало туристов</h3>
-          <span class="presentation__group-number">— №5 —</span>
-          <p class="presentation__group-information">Большинство едет в Гранд Каньон и толпится там</p>
+        <li class="presentation__item presentation__item--5">
+          <h3 class="presentation__title">Мало туристов</h3>
+          <span class="presentation__number">— №5 —</span>
+          <p class="presentation__information">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
     </section>
@@ -125,7 +125,8 @@
       <a class="search-hotel__button" type="button">найти гостиницу</a>
     </section>
     <!-- Maps -->
-    <section class=main-container__maps-hotel>
+    <section class="main-container__maps-hotel maps">
+      <h2 class="visually-hidden">Карта.</h2>
       <div class="maps__wrapper">
         <img src="./img/mobile/map-mobile.jpg" width="320" height="350" alt="Мобильная карта.">
       </div>
@@ -134,23 +135,21 @@
 
   <footer class="main-footer">
     <!-- Иконки сделать фоном в сss-->
-    <a class="hashtag__name">#VISITSEDONA</a>
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">Мы в Телеграм
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе
-          </a>
-        </li>
-      </ul>
-    </div>
+    <a class="main-footer__hashtag">#VISITSEDONA</a>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#">Мы в Телеграм
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе
+        </a>
+      </li>
+    </ul>
     <div class="main-footer__academy academy">
       <b class="academy__text">Разработано</b>
       <a class="academy__link" href="https://htmlacademy.ru">
