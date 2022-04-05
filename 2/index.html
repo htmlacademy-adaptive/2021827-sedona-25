@@ -11,7 +11,7 @@
   <header class="main-header">
     <!-- Навигация с картинкой и кнопкой  -->
     <!-- Кнопку меню добавить фоном в css -->
-    <div class="page-header__wrapper">
+    <div class="main-header page-header__wrapper">
       <a class="main-header__logo">
         <img src="./img/mobile/header-logo.svg" width="185" height="96" alt=Логотип.>
       </a>
@@ -20,7 +20,7 @@
       </button>
     </div>
     <!-- Список меню  -->
-    <nav class="main-nav">
+    <nav class="main-header main-nav">
       <!-- Div центровщик -->
 
       <!-- Элемент c миксом -->
@@ -57,38 +57,36 @@
       </div>
       <!-- Списки -->
       <ul class="presentation__list">
-        <li class="presentation__item presentation__item--blue">
+        <li class="presentation__item presentation__item--1">
           <!-- модификатор blue  -->
-          <div class="presentation__item-wrapper--blue">
-            <div class="presentation__container">
-              <h3 class="presentation__title">Настоящий городок</h3>
-              <span class="presentation__number">— №1 —</span>
-              <p class="presentation__information">Седона — не
-                аттракцион для туристов, там
-                течёт своя жизнь</p>
-            </div>
-            <img src="./img/mobile/home-foto.jpg" width="320" height="260" alt="Дом.">
+          <div class="presentation__container">
+            <h3 class="presentation__title">Настоящий городок</h3>
+            <span class="presentation__number">— №1 —</span>
+            <p class="presentation__information">Седона — не
+              аттракцион для туристов, там
+              течёт своя жизнь</p>
           </div>
+          <img src="./img/mobile/home-foto.jpg" width="320" height="260" alt="Дом.">
           <ul class="presentation__detail">
             <li class="presentation__detail-item presentation__detail-item--1">
-              <h4 class="presentation__title">Жилье</h4>
-              <p class="presentation__information"> Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в кино!
+              <h4 class="presentation__header">Жилье</h4>
+              <p class="presentation__paragraph"> Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в кино!
               </p>
             </li>
             <li class="presentation__detail-item presentation__detail-item--2">
-              <h4 class="presentation__title">Еда</h4>
-              <p class="presentation__information">Всегда заказывайте топовый фирменный бургер, вы не
+              <h4 class="presentation__header">Еда</h4>
+              <p class="presentation__paragraph">Всегда заказывайте топовый фирменный бургер, вы не
                 разочаруетесь!
               </p>
             </li>
             <li class="presentation__detail-item presentation__detail-item--3">
-              <h4 class="presentation__title">Сувениры</h4>
-              <p class="presentation__information">Не только китайского,но и настоящего местного производства!
+              <h4 class="presentation__header">Сувениры</h4>
+              <p class="presentation__paragraph">Не только китайского,но и настоящего местного производства!
               </p>
             </li>
           </ul>
         </li>
-        <li class="presentation__item presentation__item-wrapper--blue">
+        <li class="presentation__item presentation__item--2">
           <div class="presentation__container">
             <h3 class="presentation__title">Там есть мост дьявола</h3>
             <span class="presentation__number">— №2 —</span>
@@ -97,7 +95,6 @@
               разумеется</p>
           </div>
           <!-- Модификация ( картинка меняет свое местоположение) -->
-          <img class="presentation__decription-item--left" src="#" width="320" height="260" alt="фото каньона.">
           <img class="presentation__decription-item--bottom" src="./img/mobile/canyon-foto.jpg" width="320" height="260"
             alt="фото каньона.">
         </li>
@@ -125,7 +122,7 @@
       <a class="search-hotel__button" type="button">найти гостиницу</a>
     </section>
     <!-- Maps -->
-    <section class="main-container__maps-hotel maps">
+    <section class="main-container__maps maps">
       <h2 class="visually-hidden">Карта.</h2>
       <div class="maps__wrapper">
         <img src="./img/mobile/map-mobile.jpg" width="320" height="350" alt="Мобильная карта.">
