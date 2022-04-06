@@ -1,6 +1,40 @@
-@import "./page__header.scss";
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans, bold";
+  src: url("../fonts/ptsansbold.woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@import "./page__body.scss";
 @import "./main-header.scss";
 @import "./main-nav.scss";
 @import "./main-container.scss";
 @import "./services.scss";
-@import "./presentation..scss";
+@import "./presentation.scss";
+@import "./search-hotel.scss";
+@import "./main-footer.scss";
