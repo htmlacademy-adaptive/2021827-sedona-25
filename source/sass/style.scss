@@ -1,34 +1,11 @@
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
+// Viewports //
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 320px;
 
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans, bold";
-  src: url("../fonts/ptsansbold.woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
+// Colors //
+$white: #ffffff;
+$black: #000000;
 
 @import "./page__body.scss";
 @import "./main-header.scss";

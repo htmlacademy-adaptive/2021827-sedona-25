@@ -1,8 +1,8 @@
 body {
-  background-color: #ffffff;
+  background-color: $white;
   margin: 0 auto;
-  width: 320px;
+  width: $mobile-width-only;
   height: 100%;
   font-family: "PT Sans", sans-serif;
-  color: rgba(0, 0, 0, 1);
+  color: $black;
 }
