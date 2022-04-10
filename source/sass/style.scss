@@ -7,7 +7,8 @@ $mobile-width-only: 320px;
 $white: #ffffff;
 $black: #000000;
 
-@import "./page__body.scss";
+@import "./fonts.scss";
+@import "./base.scss";
 @import "./main-header.scss";
 @import "./main-nav.scss";
 @import "./main-container.scss";
@@ -16,3 +17,4 @@ $black: #000000;
 @import "./search-hotel.scss";
 @import "./main-footer.scss";
 @import "./maps.scss";
+@import "./container.scss";

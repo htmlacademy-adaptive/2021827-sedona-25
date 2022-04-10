@@ -3,14 +3,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
-  min-height: 389px;
-  width: 320px;
-  padding-bottom: 39px;
+  padding-top: 90px;
+  padding-bottom: 85px;
 }
 
 .wrapper__images {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
+  display: block;
 }
 // Catalog html //
 .main-container__wrapper-catalog {

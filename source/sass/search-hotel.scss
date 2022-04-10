@@ -23,8 +23,9 @@
 .search-hotel__button {
   background-color: #81b3d2;
   box-sizing: border-box;
-  padding: 16px 50px;
+  padding: 16px 49px;
   text-decoration: none;
+  display: inline-block;
   &:hover {
     background-color: rgba(102, 158, 192, 1);
   }
