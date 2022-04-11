@@ -3,7 +3,118 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
-  min-height: 389px;
-  width: 320px;
-  padding-bottom: 39px;
+  padding-top: 90px;
+  padding-bottom: 85px;
+}
+
+.wrapper__images {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: block;
+}
+// Catalog html //
+.main-container__wrapper-catalog {
+  background-image: url("../img/mobile/background-catalog.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 214px;
+  padding-bottom: 33px;
+}
+
+.wrapper-catalog__images {
+  margin-left: 75px;
+  margin-top: 60px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.catalog-card__information-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+
+.catalog-card__information {
+  padding-bottom: 24px;
+}
+
+.tourist-areas {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.tourist-areas__item {
+  padding-bottom: 24px;
+}
+
+.tourist-areas__link {
+  margin-bottom: 15px;
+}
+
+.tourist-areas__wrapper {
+  padding-bottom: 25px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+
+.tourist-areas__slogan {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.tourist-areas__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
+  padding-bottom: 11px;
+}
+
+.tourist-areas__number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.movie-presentation__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.movie-presentation__intro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 38px;
+}
+
+.movie-presentation__wrapper {
+  margin-right: 20px;
+  margin-left: 20px;
 }

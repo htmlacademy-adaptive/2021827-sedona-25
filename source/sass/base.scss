@@ -1,0 +1,14 @@
+body {
+  background-color: $white;
+  margin: 0 auto;
+  height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $black;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
