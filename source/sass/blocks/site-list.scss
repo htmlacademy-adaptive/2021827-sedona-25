@@ -1,0 +1,16 @@
+.site-list__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.site-list__item {
+  padding-top: 17px;
+  padding-bottom: 12px;
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}

@@ -1,0 +1,41 @@
+.tourist-areas {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.tourist-areas__item {
+  padding-bottom: 24px;
+}
+
+.tourist-areas__link {
+  margin-bottom: 15px;
+}
+
+.tourist-areas__wrapper {
+  padding-bottom: 25px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+
+.tourist-areas__slogan {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.tourist-areas__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
+  padding-bottom: 11px;
+}
+
+.tourist-areas__number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
