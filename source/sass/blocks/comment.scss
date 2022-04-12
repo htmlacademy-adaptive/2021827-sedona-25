@@ -4,5 +4,43 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.comment__wrapper {
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.comment__area {
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  min-width: 279px;
+  min-height: 150px;
+}
+
+.comment__button {
+  background-color: rgba(129, 179, 210, 1);
+  border: none;
+}
+
+.comment__button-span {
+  font-weight: 700;
+  width: 281px;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  padding: 18px 34px 13px 32px;
+}
+
+.comment__mark {
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row-reverse;
 }
