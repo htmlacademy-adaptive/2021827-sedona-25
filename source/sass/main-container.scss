@@ -21,11 +21,22 @@
 
 // Catalog html //
 .main-container__wrapper-catalog {
-  background-image: url("../img/mobile/background-catalog.jpg");
+  background-image: url("../img/mobile/background-catalog-tablet.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-height: 214px;
   padding-bottom: 33px;
+  width: $tablet-width;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin-bottom: 100px;
+  }
 }
 
 .main-container__wrapper-form {
