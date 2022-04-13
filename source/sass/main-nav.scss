@@ -3,10 +3,8 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__list {
+  @media (min-width: $tablet-width) {
     background-color: $white;
     list-style-type: none;
     margin: 0;
@@ -14,4 +12,5 @@
     display: flex;
   }
 }
+
 

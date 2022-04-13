@@ -39,3 +39,9 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 1060px;
+  }
+}
+
