@@ -1,6 +1,12 @@
 .main-footer {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__hashtag {
@@ -14,4 +20,10 @@
   align-items: center;
   display: block;
   padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 160px;
+    padding-top: 48px;
+    padding-bottom: 45px;
+  }
 }

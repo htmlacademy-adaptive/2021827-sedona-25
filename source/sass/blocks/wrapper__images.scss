@@ -5,3 +5,14 @@
   margin: 0 auto;
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .wrapper__images {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 461px;
+    height: 365px;
+  }
+}

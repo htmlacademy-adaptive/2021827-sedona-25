@@ -1,5 +1,9 @@
 .maps {
   padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .maps__image {

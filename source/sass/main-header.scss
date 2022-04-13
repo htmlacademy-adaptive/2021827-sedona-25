@@ -22,3 +22,30 @@
   display: block;
   box-sizing: border-box;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    width: 768px;
+    margin: 0 auto;
+    height: 56px;
+  }
+
+  .main-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__logo {
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+  }
+}
