@@ -1,4 +1,4 @@
-.comment__header {
+.form__comment-header {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -8,24 +8,24 @@
   display: block;
 }
 
-.comment__wrapper {
+.form__comment-wrapper {
   margin: 0;
   margin-bottom: 56px;
 }
 
-.comment__area {
+.form__comment-area {
   background-color: rgba(242, 242, 242, 1);
   border: none;
   min-width: 279px;
   min-height: 150px;
 }
 
-.comment__button {
+.form__comment-button {
   background-color: rgba(129, 179, 210, 1);
   border: none;
 }
 
-.comment__button-span {
+.form__comment-button-span {
   font-weight: 700;
   width: 281px;
   font-size: 21px;
@@ -37,7 +37,7 @@
   padding: 18px 34px 13px 32px;
 }
 
-.comment__mark {
+.form__comment-mark {
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;

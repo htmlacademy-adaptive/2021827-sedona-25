@@ -1,13 +1,11 @@
 // index.html
-.wrapper__images {
+.main-container__images {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
   display: block;
-}
 
-@media (min-width: $tablet-width) {
-  .wrapper__images {
+  @media (min-width: $tablet-width) {
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;

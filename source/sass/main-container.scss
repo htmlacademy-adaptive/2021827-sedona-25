@@ -5,10 +5,8 @@
   background-size: 100% auto;
   padding-top: 90px;
   padding-bottom: 85px;
-}
 
-@media (min-width: $tablet-width) {
-  .main-container__wrapper {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/mobile/background-index-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;

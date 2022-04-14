@@ -1,4 +1,4 @@
-.visited__header {
+.form__visited-header {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -7,22 +7,22 @@
   margin-bottom: 20px;
 }
 
-.visited__list {
+.form__visited-list {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
 
-.visited__control-label {
+.form__visited-label {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
 
-.visited__control-input {
+.form__visited-input {
   margin-bottom: 16px;
 }
 
-.visited__control-input:nth-child(4) {
+.form__visited-input:nth-child(4) {
   margin-bottom: 24px;
 }
