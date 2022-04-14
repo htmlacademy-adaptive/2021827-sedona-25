@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/2021827-sedona-25/5/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo">
+        <img src="./img/mobile/header-logo.svg" width="185" height="96" alt="Логотип." />
+      </a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <!-- Список меню  -->
+    <nav class="main-header__main-nav main-nav">
+      <!-- Div центровщик -->
+
+      <!-- Элемент c миксом -->
+      <ul class="main-nav__list site-list">
+        <!-- Модификатор главной ( подчеркивание ) -->
+        <li class="site-list__item site-list__item--current">
+          <a class="site-list__link" href="#">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Фото и Видео</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">html Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <div class="main-container__wrapper-form">
+      <img class="wrapper-catalog__images" src="./img/mobile/sedona-catalog.svg" width="229" height="39px"
+        alt="Sedona.">
+    </div>
+    <section class="feedback container">
+      <div class="feedback__wrapper">
+        <h1 class="feedback__slogan">Оставьте свой отзыв</h1>
+        <p class="feedback__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
+      </div>
+    </section>
+    <section class="main-container personal-information container">
+      <form class="personal-information__filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="personal-information__form">
+          <legend class="form__title">Представьтесь:</legend>
+          <label class="form__naming" for="auth-record">ИМЯ*:</label>
+          <input class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Пётр">
+          <label class="form__naming" for="auth-record">ФАМИЛИЯ*:</label>
+          <input class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Пустота">
+          </div>
+          <label class="form__naming" for="auth-record">Отчество:</label>
+          <input class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Викторович">
+        </fieldset>
+        <fieldset class="personal-information__form-contacts">
+          <legend class="form-contacts__title">Контактная информация:</legend>
+          <label class="form-contacts__naming" for="auth-record">Контактный телефон*:</label>
+          <div class="form-contacts__wrapper">
+            <input class="form-contacts__name" type="text" id="auth-record" name="auth-record" required
+              placeholder="Введите телефон">
+            <button class="form-contacts__phone" type="button" aria-label="телефон." value="">
+              <span class="visually-hidden">Кнопка Тел</span>
+            </button>
+          </div>
+          <div class="form-contacts__wrapper-mail">
+            <label class="form-contacts__naming" for="auth-record">Электронная почта*:</label>
+            <div class="form-contacts__wrapper">
+              <input class="form-contacts__name" type="text" id="auth-record" name="auth-record" required
+                placeholder="Введите e-mail">
+              <button class="form-contacts__mail" type="button" aria-label="почта." value="">
+                <span class="visually-hidden">Кнопка Почты</span>
+              </button>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="personal__impression">
+          <legend class="impression__header">Ваше Общее впечатление:</legend>
+          <ul class="impression__list">
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="visually-hidden impression__control-input" type="radio" name="hotel-group." value="hotel"
+                  checked>
+                <span class="impression__control-mark"></span>
+                <span class="impression__control-label">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="visually-hidden impression__control-input" type="radio" name="hotel-group." value="motel">
+                <span class="impression__control-mark"></span>
+                <span class="impression__control-label">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control">
+                <input class="visually-hidden impression__control-input" type="radio" name="hotel-group."
+                  value="apartments">
+                <span class="impression__control-mark"></span>
+                <span class="impression__control-label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="personal__visited">
+          <legend class="visited__header">Посещенные Достопримечательности:</legend>
+          <ul class="visited__list">
+            <li class="visited__item">
+              <label class="visited__control">
+                <input class="visually-hidden visited__control-input" type="checkbox" name="bridge." value="hotel"
+                  checked>
+                <span class="visited__control-mark"></span>
+                <span class="visited__control-label">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="visited__item">
+              <label class="visited__control">
+                <input class="visually-hidden visited__control-input" type="checkbox" name="montain." value="motel"
+                  checked>
+                <span class="visited__control-mark"></span>
+                <span class="visited__control-label">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="visited__item">
+              <label class="visited__control">
+                <input class="visually-hidden visited__control-input" type="checkbox" name="park." value="apartments"
+                  checked>
+                <span class="visited__control-mark"></span>
+                <span class="visited__control-label">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="visited__item">
+              <label class="visited__control">
+                <input class="visually-hidden visited__control-input" type="checkbox" name="red-rocks."
+                  value="apartments">
+                <span class="visited__control-mark"></span>
+                <span class="visited__control-label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="personal__comment">
+          <span class="comment__header">Опишите свои эмоции:</span>
+          <p class="comment__wrapper">
+            <label for="comment"></label>
+            <textarea class="comment__area" rows="7" name="comment"
+              id="comment">Опишите подробно все свои восторги</textarea>
+          </p>
+          <button class="comment__button" type="submit"><span class="comment__button-span">отправить
+              отзыв</span></button>
+          <span class="comment__mark">* — обязательные поля</span>
+          <form class="comment__form" action="https://echo.htmlacademy.ru/" method="post">
+          </form>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <!-- Иконки сделать фоном в сss-->
+    <a class="main-footer__hashtag">#VISITSEDONA</a>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#">Мы в Телеграм
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__academy academy">
+      <b class="academy__text">Разработано</b>
+      <a class="academy__link" href="https://htmlacademy.ru">
+        <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+            fill="#000" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
