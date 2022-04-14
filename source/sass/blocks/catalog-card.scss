@@ -58,4 +58,22 @@
 
 .catalog-card__information {
   padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.catalog-card {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
 }

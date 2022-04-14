@@ -42,6 +42,23 @@
   }
 }
 
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: flex;
+    width: 1020px;
+    margin: 0 auto;
+    height: 56px;
+  }
+
+  .main-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .main-header__toggle {
     display: none;
