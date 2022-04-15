@@ -43,19 +43,18 @@
   </header>
   <main class="main-container">
     <div class="main-container__wrapper-form">
-      <img class="wrapper-catalog__images" src="./img/mobile/sedona-catalog.svg" width="229" height="39px"
+      <img class="main-container__form-images" src="./img/mobile/sedona-catalog.svg" width="229" height="39px"
         alt="Sedona.">
     </div>
-    <section class="feedback container">
-      <div class="feedback__wrapper">
-        <h1 class="feedback__slogan">Оставьте свой отзыв</h1>
-        <p class="feedback__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях</p>
-      </div>
+    <section class="main-container__feedback feedback container">
+      <h1 class="feedback__slogan">Оставьте свой отзыв</h1>
+      <p class="feedback__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
     </section>
-    <section class="main-container personal-information container">
-      <form class="personal-information__filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="personal-information__form">
+    <section class="main-container__personal-information personal-information container">
+      <h3 class="visually-hidden">Отзыв о путешествии.</h3>
+      <form class="personal-information__filter form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="form__info">
           <legend class="form__title">Представьтесь:</legend>
           <label class="form__naming" for="auth-record">ИМЯ*:</label>
           <input class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Пётр">
@@ -65,103 +64,101 @@
           <label class="form__naming" for="auth-record">Отчество:</label>
           <input class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Викторович">
         </fieldset>
-        <fieldset class="personal-information__form-contacts">
-          <legend class="form-contacts__title">Контактная информация:</legend>
-          <label class="form-contacts__naming" for="auth-record">Контактный телефон*:</label>
-          <div class="form-contacts__wrapper">
-            <input class="form-contacts__name" type="text" id="auth-record" name="auth-record" required
+        <fieldset class="form__contacts">
+          <legend class="form__contacts-title">Контактная информация:</legend>
+          <label class="form__contacts-naming" for="auth-record">Контактный телефон*:</label>
+          <div class="form__contacts-wrapper">
+            <input class="form__contacts-name" type="text" id="auth-record" name="auth-record" required
               placeholder="Введите телефон">
-            <button class="form-contacts__phone" type="button" aria-label="телефон." value="">
+            <button class="form__contacts-phone" type="button" aria-label="телефон." value="">
               <span class="visually-hidden">Кнопка Тел</span>
             </button>
           </div>
-          <div class="form-contacts__wrapper-mail">
-            <label class="form-contacts__naming" for="auth-record">Электронная почта*:</label>
-            <div class="form-contacts__wrapper">
-              <input class="form-contacts__name" type="text" id="auth-record" name="auth-record" required
+          <div class="form__contacts-wrapper-mail">
+            <label class="form__contacts-naming" for="auth-record">Электронная почта*:</label>
+            <div class="form__contacts-wrapper">
+              <input class="form__contacts-name" type="text" id="auth-record" name="auth-record" required
                 placeholder="Введите e-mail">
-              <button class="form-contacts__mail" type="button" aria-label="почта." value="">
+              <button class="form__contacts-mail" type="button" aria-label="почта." value="">
                 <span class="visually-hidden">Кнопка Почты</span>
               </button>
             </div>
           </div>
         </fieldset>
-        <fieldset class="personal__impression">
-          <legend class="impression__header">Ваше Общее впечатление:</legend>
-          <ul class="impression__list">
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="visually-hidden impression__control-input" type="radio" name="hotel-group." value="hotel"
+        <fieldset class="form__impression">
+          <legend class="form__impression-header">Ваше Общее впечатление:</legend>
+          <ul class="form__impression-list">
+            <li class="form__impression-item">
+              <label class="form__impression-control">
+                <input class="visually-hidden form__impression-input" type="radio" name="hotel-group." value="hotel"
                   checked>
-                <span class="impression__control-mark"></span>
-                <span class="impression__control-label">Скорее положительное</span>
+                <span class="form__impression-mark"></span>
+                <span class="form__impression-label">Скорее положительное</span>
               </label>
             </li>
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="visually-hidden impression__control-input" type="radio" name="hotel-group." value="motel">
-                <span class="impression__control-mark"></span>
-                <span class="impression__control-label">Скорее отрицательное</span>
+            <li class="form__impression-item">
+              <label class="form__impression-control">
+                <input class="visually-hidden form__impression-input" type="radio" name="hotel-group." value="motel">
+                <span class="form__impression-mark"></span>
+                <span class="form__impression-label">Скорее отрицательное</span>
               </label>
             </li>
-            <li class="impression__item">
-              <label class="impression__control">
-                <input class="visually-hidden impression__control-input" type="radio" name="hotel-group."
+            <li class="form__impression-item">
+              <label class="form__impression-control">
+                <input class="visually-hidden form__impression-input" type="radio" name="hotel-group."
                   value="apartments">
-                <span class="impression__control-mark"></span>
-                <span class="impression__control-label">Затрудняюсь ответить</span>
+                <span class="form__impression-mark"></span>
+                <span class="form__impression-label">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="personal__visited">
-          <legend class="visited__header">Посещенные Достопримечательности:</legend>
-          <ul class="visited__list">
-            <li class="visited__item">
-              <label class="visited__control">
-                <input class="visually-hidden visited__control-input" type="checkbox" name="bridge." value="hotel"
-                  checked>
-                <span class="visited__control-mark"></span>
-                <span class="visited__control-label">Мост Дьявола</span>
+        <fieldset class="form__visited">
+          <legend class="form__visited-header">Посещенные Достопримечательности:</legend>
+          <ul class="form__visited-list">
+            <li class="form__visited-item">
+              <label class="form__visited-control">
+                <input class="visually-hidden form__visited-input" type="checkbox" name="bridge." value="hotel" checked>
+                <span class="form__visited-mark"></span>
+                <span class="form__visited-label">Мост Дьявола</span>
               </label>
             </li>
-            <li class="visited__item">
-              <label class="visited__control">
-                <input class="visually-hidden visited__control-input" type="checkbox" name="montain." value="motel"
+            <li class="form__visited-item">
+              <label class="form__visited-control">
+                <input class="visually-hidden form__visited-input" type="checkbox" name="montain." value="motel"
                   checked>
-                <span class="visited__control-mark"></span>
-                <span class="visited__control-label">Гора-Колокол</span>
+                <span class="form__visited-mark"></span>
+                <span class="form__visited-label">Гора-Колокол</span>
               </label>
             </li>
-            <li class="visited__item">
-              <label class="visited__control">
-                <input class="visually-hidden visited__control-input" type="checkbox" name="park." value="apartments"
+            <li class="form__visited-item">
+              <label class="form__visited-control">
+                <input class="visually-hidden form__visited-input" type="checkbox" name="park." value="apartments"
                   checked>
-                <span class="visited__control-mark"></span>
-                <span class="visited__control-label">Слайд-парк</span>
+                <span class="form__visited-mark"></span>
+                <span class="form__visited-label">Слайд-парк</span>
               </label>
             </li>
-            <li class="visited__item">
-              <label class="visited__control">
-                <input class="visually-hidden visited__control-input" type="checkbox" name="red-rocks."
-                  value="apartments">
-                <span class="visited__control-mark"></span>
-                <span class="visited__control-label">Красные скалы</span>
+            <li class="form__visited-item">
+              <label class="form__visited-control">
+                <input class="visually-hidden form__visited-input" type="checkbox" name="red-rocks." value="apartments">
+                <span class="form__visited-mark"></span>
+                <span class="form__visited-label">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <div class="personal__comment">
-          <span class="comment__header">Опишите свои эмоции:</span>
-          <p class="comment__wrapper">
+        <div class="form__comment">
+          <span class="form__comment-header">Опишите свои эмоции:</span>
+          <p class="form__comment-wrapper">
             <label for="comment"></label>
-            <textarea class="comment__area" rows="7" name="comment"
+            <textarea class="form__comment-area" rows="7" name="comment"
               id="comment">Опишите подробно все свои восторги</textarea>
           </p>
-          <button class="comment__button" type="submit"><span class="comment__button-span">отправить
+          <button class="form__comment-button" type="submit"><span class="form__comment-button-span">отправить
               отзыв</span></button>
-          <span class="comment__mark">* — обязательные поля</span>
-          <form class="comment__form" action="https://echo.htmlacademy.ru/" method="post">
+          <span class="form__comment-mark">* — обязательные поля</span>
+          <form class="form__comment-form" action="https://echo.htmlacademy.ru/" method="post">
           </form>
         </div>
       </form>
@@ -170,7 +167,7 @@
   <footer class="main-footer">
     <!-- Иконки сделать фоном в сss-->
     <a class="main-footer__hashtag">#VISITSEDONA</a>
-    <ul class="page-footer__social social">
+    <ul class="main-footer__social social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
         </a>
