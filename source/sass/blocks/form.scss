@@ -74,3 +74,134 @@
   margin-bottom: 16px;
   display: flex;
 }
+
+.form__comment-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.form__comment-wrapper {
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.form__comment-area {
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  min-width: 279px;
+  min-height: 150px;
+}
+
+.form__comment-button {
+  background-color: rgba(129, 179, 210, 1);
+  border: none;
+}
+
+.form__comment-button-span {
+  font-weight: 700;
+  width: 281px;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  padding: 18px 34px 13px 32px;
+}
+
+.form__comment-mark {
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.form__impression-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__impression-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.form__impression-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__impression {
+  margin-top: 24px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 24px;
+}
+
+.form__visited {
+  margin-top: 24px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 24px;
+}
+
+.form__comment {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 52px;
+}
+
+.form__visited-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__visited-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.form__visited-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__visited-input {
+  margin-bottom: 16px;
+}
+
+.form__visited-input:nth-child(4) {
+  margin-bottom: 24px;
+}
+
+.form-images {
+  margin-left: 75px;
+  margin-top: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 150px;
+  }
+}
