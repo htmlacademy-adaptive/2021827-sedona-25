@@ -23,7 +23,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-height: 214px;
-  padding-bottom: 33px;
+  // margin-bottom: 33px;
   width: $tablet-width;
 
   @media (min-width: $tablet-width) {
@@ -59,5 +59,20 @@
     display: block;
     width: 461px;
     height: 365px;
+  }
+}
+
+.main-container__catalog-card {
+  padding-top: 33px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 62px;
   }
 }
