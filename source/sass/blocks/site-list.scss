@@ -40,6 +40,25 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 570px;
+    width: 768px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item:nth-child(1) {
+    margin-right: 75px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item:nth-child(2) {
+    margin-right: 205px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item:nth-child(3) {
+    margin-right: 45px;
   }
 }

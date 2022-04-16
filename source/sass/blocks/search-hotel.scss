@@ -36,9 +36,11 @@
 .search-hotel__button {
   background-color: #81b3d2;
   box-sizing: border-box;
-  padding: 16px 47px;
   text-decoration: none;
   display: inline-block;
+  width: 284px;
+  padding: 10px 20px;
+  text-align: center;
 
   &:hover {
     background-color: rgba(102, 158, 192, 1);
@@ -58,11 +60,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 121px;
-    padding-right: 121px;
-    padding-top: 14px;
-    padding-bottom: 17px;
-    margin-left: 155px;
+    width: 458px;
+    margin: 0 auto;
+    display: block;
   }
 }
 

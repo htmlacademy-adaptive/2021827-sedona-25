@@ -29,8 +29,6 @@
 .presentation__wrapper {
   padding-top: 32px;
   padding-bottom: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -86,29 +84,48 @@
     width: 320px;
     margin: 0 auto;
     border-bottom: 1px solid $black;
+    padding-top: 26px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $tablet-width) {
     width: 256px;
     margin: 0;
     border: none;
+    padding-top: 42px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
     margin: 0;
     border: none;
+    padding-top: 42px;
+    padding-bottom: 62px;
   }
 }
 
 .presentation__wrapper-end {
+  padding-top: 24px;
+  padding-bottom: 26px;
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 256px;
     margin: 0;
     border: none;
+    padding-top: 42px;
+    padding-bottom: 63px;
   }
-  width: 320px;
-  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    margin: 0;
+    border: none;
+    padding-top: 43px;
+    padding-bottom: 62px;
+  }
 }
 
 
@@ -197,8 +214,6 @@
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
-  width: 280px;
   margin: 0 auto;
 }
 
@@ -216,6 +231,14 @@
   text-transform: uppercase;
   color: rgba(51, 51, 51, 1);
   margin: 0 auto 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+}
+
+.presentation__item--2 .presentation__wrapper-blue {
+  margin-bottom: 0;
 }
 
 .presentation__item--4 .presentation__information {
@@ -230,14 +253,11 @@
 
 .presentation__item--4 {
   background-color: rgba(238, 238, 238, 1);
-  padding-top: 26px;
-  padding-bottom: 24px;
+
 
   @media (min-width: $tablet-width) {
     width: 256px;
     justify-content: space-between;
-    padding-top: 42px;
-    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -247,6 +267,10 @@
 
 .presentation__detail-item--3 .presentation__paragraph {
   margin-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -315,14 +339,10 @@
 
 .presentation__item--5 {
   background-color: rgba(238, 238, 238, 1);
-  padding-top: 26px;
-  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     width: 256px;
     justify-content: space-between;
-    padding-top: 42px;
-    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -332,14 +352,11 @@
 
 .presentation__item--6 {
   background-color: rgba(238, 238, 238, 1);
-  padding-top: 24px;
-  padding-bottom: 26px;
+
 
   @media (min-width: $tablet-width) {
     width: 256px;
     justify-content: space-between;
-    padding-top: 42px;
-    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,11 +1,16 @@
 .main-footer {
   display: flex;
   flex-direction: column;
+  padding-top: 38px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: initial;
     justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    align-items: center;
   }
 }
 
@@ -16,14 +21,12 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  box-sizing: border-box;
   align-items: center;
   display: block;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    min-width: 160px;
-    padding-top: 48px;
-    padding-bottom: 45px;
+    min-width: 166px;
+    margin: 0;
   }
 }
