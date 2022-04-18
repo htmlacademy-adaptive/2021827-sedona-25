@@ -26,6 +26,7 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
 
   @media (min-width: $tablet-width) {
+    width: 130px;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -38,27 +39,10 @@
   @media (min-width: $desktop-width) {
     width: 1060px;
   }
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .site-list__item:nth-child(1) {
-    margin-right: 75px;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .site-list__item:nth-child(2) {
-    margin-right: 205px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .site-list__item:nth-child(3) {
-    margin-right: 45px;
+    margin-right: 210px;
   }
 }

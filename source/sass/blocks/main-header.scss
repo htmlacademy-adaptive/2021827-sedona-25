@@ -2,10 +2,7 @@
   width: 320px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     width: 185px;
-    justify-content: space-between;
-    margin: 0;
     position: absolute;
     left: 312px;
   }
