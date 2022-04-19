@@ -127,7 +127,7 @@ body {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1280px;
+    width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
   }
@@ -483,6 +483,11 @@ body {
     margin-bottom: 47px;
   }
 }
+@media (min-width: 1200px) {
+  .main-container__wrapper {
+    margin-bottom: 0;
+  }
+}
 
 .main-container__wrapper-catalog {
   background-image: url("../img/mobile/background-catalog-tablet.jpg");
@@ -587,10 +592,7 @@ body {
 }
 @media (min-width: 768px) {
   .main-header__wrapper {
-    display: flex;
     width: 185px;
-    justify-content: space-between;
-    margin: 0;
     position: absolute;
     left: 312px;
   }
@@ -738,8 +740,10 @@ body {
   padding-bottom: 34px;
 }
 
-.presentation {
-  padding-bottom: 32px;
+@media (min-width: 1200px) {
+  .presentation {
+    padding-bottom: 0;
+  }
 }
 
 .presentation__slogan {
@@ -770,7 +774,6 @@ body {
 .presentation__wrapper {
   padding-top: 32px;
   padding-bottom: 16px;
-  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .presentation__wrapper {
@@ -817,7 +820,6 @@ body {
     flex-wrap: wrap;
     list-style-type: none;
     margin-top: 0;
-    margin-bottom: 61px;
     padding-left: 0;
     padding-right: 0;
     box-shadow: none;
@@ -831,6 +833,8 @@ body {
     border-bottom: 1px solid #000000;
     padding-top: 26px;
     padding-bottom: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media (min-width: 768px) {
@@ -914,6 +918,8 @@ body {
     width: 400px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 47px;
+    padding-bottom: 57px;
   }
 }
 
@@ -1184,10 +1190,18 @@ body {
 
 .search-hotel {
   padding-bottom: 49px;
+  padding-top: 49px;
 }
 @media (min-width: 768px) {
   .search-hotel {
-    margin-bottom: 58px;
+    padding-bottom: 61px;
+    padding-top: 58px;
+  }
+}
+@media (min-width: 1200px) {
+  .search-hotel {
+    padding-top: 61px;
+    padding-bottom: 66px;
   }
 }
 
@@ -1290,6 +1304,7 @@ body {
 }
 @media (min-width: 768px) {
   .site-list__item {
+    width: 130px;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -1303,26 +1318,10 @@ body {
     width: 1060px;
   }
 }
-@media (min-width: 768px) {
-  .site-list {
-    width: 768px;
-    justify-content: space-between;
-  }
-}
 
 @media (min-width: 768px) {
-  .site-list__item:nth-child(1) {
-    margin-right: 75px;
-  }
-}
-@media (min-width: 768px) {
   .site-list__item:nth-child(2) {
-    margin-right: 205px;
-  }
-}
-@media (min-width: 768px) {
-  .site-list__item:nth-child(3) {
-    margin-right: 45px;
+    margin-right: 210px;
   }
 }
 .social {
