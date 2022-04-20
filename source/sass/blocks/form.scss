@@ -25,6 +25,7 @@
   display: block;
   font-family: inherit;
   color: $black;
+  margin-bottom: 16px;
 }
 
 .form__contacts-title {
@@ -54,6 +55,7 @@
   display: block;
   font-family: inherit;
   color: $black;
+  margin-bottom: 16px;
 }
 
 .form__contacts-phone {
@@ -128,7 +130,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .form__impression-list {
@@ -148,6 +150,9 @@
   border: none;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 24px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .form__visited {
@@ -204,4 +209,22 @@
   @media (min-width: $desktop-width) {
     margin-left: 150px;
   }
+}
+
+.form__info,
+.form__contacts {
+  border: none;
+  padding: 0;
+  margin-top: 24px;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+}
+
+.form__impression-item {
+  margin-bottom: 16px;
+}
+
+.form__visited-item {
+  margin-bottom: 16px;
 }
