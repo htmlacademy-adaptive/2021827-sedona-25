@@ -1,13 +1,16 @@
 .main-header__wrapper {
-  width: 320px;
+  @media (min-width: $mobile-width-only) {
+    padding: 0 20px;
+    display: flex;
+  }
 
   @media (min-width: $tablet-width) {
     width: 185px;
     position: absolute;
-    left: 312px;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
-
 
 .main-header__toggle {
   background-image: url("../img/mobile/menu-header.svg");
@@ -29,7 +32,7 @@
 }
 
 .main-header__logo {
-  padding-left: 63px;
+  margin: 0 auto;
   display: block;
   box-sizing: border-box;
 
@@ -42,8 +45,8 @@
 
 .main-header {
   @media (min-width: $tablet-width) {
-    width: 768px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop-width) {

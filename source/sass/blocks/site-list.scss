@@ -26,7 +26,7 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
 
   @media (min-width: $tablet-width) {
-    width: 130px;
+    width: calc(130 / 768 * 100%);
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -43,6 +43,6 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item:nth-child(2) {
-    margin-right: 210px;
+    margin-right: calc(210 / 768 * 100%);
   }
 }

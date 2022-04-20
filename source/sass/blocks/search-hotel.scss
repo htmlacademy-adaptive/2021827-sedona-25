@@ -44,10 +44,11 @@
   background-color: #81b3d2;
   box-sizing: border-box;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   width: 284px;
   padding: 10px 20px;
   text-align: center;
+  margin: 0 auto;
 
   &:hover {
     background-color: rgba(102, 158, 192, 1);
