@@ -1,0 +1,44 @@
+.movie-presentation__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-top: 0;
+  }
+}
+
+.movie-presentation__intro {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font: inherit;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: inherit;
+  }
+}
+
+.movie-presentation__image {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+}

@@ -1,0 +1,11 @@
+.maps {
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.maps__image {
+  width: 100%;
+}

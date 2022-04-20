@@ -1,0 +1,33 @@
+.academy__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    color: rgba(129, 179, 210, 1);
+  }
+
+  &:active {
+    color: rgba(179, 179, 179, 1);
+  }
+}
+
+.academy {
+  display: block;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.academy__link-svg:hover path {
+  fill: rgba(129, 179, 210, 1);
+}
+
+.academy__link-svg:active path {
+  fill: rgba(179, 179, 179, 1);
+}

@@ -1,0 +1,32 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 38px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    align-items: center;
+  }
+}
+
+.main-footer__hashtag {
+  color: #000000;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  display: block;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 166px;
+    margin: 0;
+  }
+}

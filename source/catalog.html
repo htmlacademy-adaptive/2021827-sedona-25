@@ -41,10 +41,10 @@
   </header>
   <main class="main-container">
     <!-- Заголовок первого уровня ( предварительно скрыть), фоновый background в css> svg седоны в разметке -->
-    <div class="main-container__wrapper-catalog">
+    <div class="main-container__wrapper-catalog wrapper-catalog">
       <img class="wrapper-catalog__images" src="./img/mobile/sedona-catalog.svg" width="229" height="39" alt="Sedona.">
     </div>
-    <section class="main-cotainer__catalog-card catalog-card container-catalog">
+    <section class="main-container__catalog-card catalog-card container">
       <!-- Фото и Видео с описание в диве  -->
       <div class="catalog-card__information">
         <h1 class="catalog-card__information-title title">Фото и Видео</h1>
@@ -54,13 +54,13 @@
       </div>
       <!-- Карточки -->
       <!-- кнопки лайка добавить декортивно в css -->
-      <ul class="catalog-card__tourist-areas tourist-areas container-catalog">
+      <ul class="catalog-card__tourist-areas tourist-areas container">
         <li class="tourist-areas__item">
           <a class="tourist-areas__link" src="./img/mobile/photo1-catalog.jpg">
-            <img class="tourist-areas__images tourist-areas__images--road" src="./img/mobile/photo1-catalog.jpg"
+            <img class="tourist-areas__big-img  tourist-areas__images-road" src="./img/mobile/photo1-catalog.jpg"
               width="280" height="280" alt="фото дороги.">
           </a>
-          <div class="tourist-areas__wrapper">
+          <div class="tourist-areas__wrapper-1">
             <h3 class="tourist-areas__slogan">Неродные просторы</h3>
             <p class="tourist-areas__author">Автор фото: Борис </p>
             <button class="tourist-areas__like" type="button">
@@ -113,21 +113,21 @@
         </li>
       </ul>
     </section>
-    <section class="main-container__movie-presentation movie-presentation ">
+    <section class="main-container__movie-presentation movie-presentation container">
       <h2 class="movie-presentation__title">Все еще сомневаетесь?</h2>
       <p class="movie-presentation__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
       <!-- Видео -->
       <div class="movie-presentation__wrapper">
-        <img src="./img/mobile/video-catolog.jpg" alt="Видео.">
+        <img class="movie-presentation__image" src="./img/mobile/video-catolog.jpg" alt="Видео.">
         <button class="movie-presentation__play" type="button">Play</button>
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <!-- Иконки сделать фоном в сss-->
     <a class="main-footer__hashtag">#VISITSEDONA</a>
-    <ul class="page-footer__social social">
+    <ul class="main-footer__social social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
         </a>
