@@ -29,3 +29,10 @@
     padding-bottom: 64px;
   }
 }
+
+.personal-information__filter {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
