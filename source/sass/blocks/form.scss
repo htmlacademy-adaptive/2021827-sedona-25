@@ -26,11 +26,21 @@
   padding-right: 16px;
   cursor: pointer;
   font-weight: 700;
+  outline: none;
   font-size: 18px;
   line-height: 26px;
   display: block;
   font-family: inherit;
   color: $black;
+
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    background-color: $white;
+    box-shadow: 0 0 0 4px rgba(229, 229, 229, 1);
+  }
 }
 
 .form__contacts-title {
@@ -56,11 +66,21 @@
   cursor: pointer;
   font-weight: 700;
   font-size: 18px;
+  outline: none;
   line-height: 26px;
   display: block;
   font-family: inherit;
   color: $black;
   margin-bottom: 16px;
+
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    background-color: $white;
+    box-shadow: 0 0 0 4px rgba(229, 229, 229, 1);
+  }
 }
 
 .form__contacts-phone {
@@ -428,6 +448,14 @@
   left: 0;
   bottom: -7px;
 
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    background-color: rgba(213, 213, 213, 1);
+  }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     border-radius: 50%;
@@ -447,6 +475,11 @@
   border-radius: 50%;
   background-color: rgba(51, 51, 51, 1);
   content: "";
+
+  &:active {
+    background-color: rgba(51, 51, 51, 0.3);
+    opacity: 0.3;
+  }
 }
 
 .form__visited-mark {
@@ -456,6 +489,14 @@
   background-color: rgba(242, 242, 242, 1);
   bottom: -11px;
   left: 0;
+
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    background-color: rgba(213, 213, 213, 1);
+  }
 
   @media (min-width: $tablet-width) {
     bottom: -11px;
@@ -467,4 +508,8 @@
   background-image: url("../img/mobile/checked.svg");
   background-position: center;
   background-repeat: no-repeat;
+
+  &:active {
+    opacity: 0.3;
+  }
 }

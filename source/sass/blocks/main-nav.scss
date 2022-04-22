@@ -1,5 +1,5 @@
 .main-nav__list {
-  background-color: #81b3d2;
+  background-color: rgba(129, 179, 210, 1);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -7,8 +7,6 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
   }
 }
