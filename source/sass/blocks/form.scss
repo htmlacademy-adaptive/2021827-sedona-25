@@ -57,7 +57,7 @@
 }
 
 .form__contacts-name {
-  width: 100%;
+  width: 80%;
   background-color: #f2f2f2;
   border: none;
   height: 58px;
@@ -139,6 +139,14 @@
   margin: 0 auto;
   display: block;
 
+  &:hover {
+    background-color: rgba(102, 158, 192, 1);
+  }
+
+  &:active {
+    background-color: rgba(84, 150, 189, 1);
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }
@@ -154,6 +162,10 @@
   color: rgba(255, 255, 255, 1);
   display: block;
   padding: 18px 34px 13px 32px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .form__comment-mark {
@@ -350,13 +362,16 @@
 
 .form__info {
   width: 100%;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
     border-right: 1px solid rgba(219, 219, 219, 1);
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 0;
     padding-left: 120px;
     padding-right: 63px;
   }
@@ -364,14 +379,17 @@
 
 .form__contacts {
   width: 100%;
+  margin-top: 24px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 64px;
     padding-right: 178px;
+    margin-top: 0;
   }
 }
 
@@ -512,4 +530,22 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.form__contacts-button {
+  width: 58px;
+  height: 58px;
+  background-color: rgba(230, 230, 230, 1);
+  background-image: url("../img/mobile/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form__contacts-button-2 {
+  width: 58px;
+  height: 58px;
+  background-color: rgba(230, 230, 230, 1);
+  background-image: url("../img/mobile/mail.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -55,6 +55,13 @@
   }
 }
 
+.tourist-areas__like {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+    justify-self: end;
+  }
+}
+
 .tourist-areas__wrapper-1 {
   @media (min-width: $mobile-width-only) {
     padding-bottom: 25px;
@@ -78,6 +85,7 @@
     position: absolute;
     bottom: 3px;
     width: 100%;
+    display: grid;
   }
 }
 
@@ -100,6 +108,7 @@
     color: $white;
     position: absolute;
     bottom: 3px;
+    display: grid;
     width: 100%;
   }
 }
@@ -114,6 +123,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 5;
   }
 }
 
@@ -132,6 +145,11 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+    justify-self: end;
+  }
 }
 
 .tourist-areas__big-img {
