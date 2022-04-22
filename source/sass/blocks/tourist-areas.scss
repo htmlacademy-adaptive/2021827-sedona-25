@@ -4,6 +4,7 @@
     list-style-type: none;
     margin-top: 24px;
     padding-right: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -41,6 +42,10 @@
   }
 }
 
+.tourist-areas__item:nth-child(4) {
+  padding-bottom: 0;
+}
+
 .tourist-areas__link {
   margin-bottom: 15px;
 
@@ -54,6 +59,8 @@
   @media (min-width: $mobile-width-only) {
     padding-bottom: 25px;
     border-bottom: 1px solid rgba(229, 229, 229, 1);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -78,6 +85,8 @@
   @media (min-width: $mobile-width-only) {
     border-bottom: 1px solid rgba(229, 229, 229, 1);
     padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -129,6 +138,8 @@
   @media (min-width: $mobile-width-only) {
     margin-bottom: 15px;
     width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -142,6 +153,9 @@
 .tourist-areas__images {
   @media (min-width: $mobile-width-only) {
     margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
   }
 
   @media (min-width: $tablet-width) {

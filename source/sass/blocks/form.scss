@@ -405,13 +405,17 @@
 }
 
 .form__button-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: $mobile-width-only) {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
   @media (min-width: $desktop-width) {
     padding-left: 90px;
     padding-right: 90px;
+    justify-content: space-between;
   }
 }
 
