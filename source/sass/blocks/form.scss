@@ -307,7 +307,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 146px;
+    padding-left: 84px;
+    padding-right: 110px;
   }
 
   @media (min-width: $desktop-width) {
@@ -518,7 +519,11 @@
 
   @media (min-width: $tablet-width) {
     bottom: -11px;
-    left: -56px;
+    left: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -54px;
   }
 }
 
