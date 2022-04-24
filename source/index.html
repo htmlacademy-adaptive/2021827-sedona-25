@@ -17,18 +17,16 @@
         <a class="main-header__logo">
           <img src="./img/mobile/header-logo.svg" width="185" height="96" alt=Логотип.>
         </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </div>
       <!-- Список меню  -->
-      <nav class="main-header__main-nav main-nav">
-        <!-- Div центровщик -->
-
+      <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <!-- Элемент c миксом -->
         <ul class="main-nav__list site-list">
           <!-- Модификатор главной ( подчеркивание ) -->
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link site-list__item--current" href="#">Главная</a>
           </li>
           <li class="site-list__item">
@@ -179,6 +177,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
