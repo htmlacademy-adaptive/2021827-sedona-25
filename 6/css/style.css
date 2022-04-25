@@ -159,12 +159,19 @@ body {
   }
 }
 
-.tourist-areas__item {
-  padding-bottom: 24px;
+@media (min-width: 320px) {
+  .tourist-areas__item {
+    margin-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 @media (min-width: 768px) {
   .tourist-areas__item {
-    padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: none;
   }
 }
 @media (min-width: 1200px) {
@@ -176,7 +183,7 @@ body {
 
 @media (min-width: 768px) {
   .tourist-areas__item-2 {
-    width: 49%;
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
@@ -191,6 +198,8 @@ body {
 
 .tourist-areas__link {
   margin-bottom: 15px;
+  display: block;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .tourist-areas__link {
@@ -209,7 +218,6 @@ body {
 @media (min-width: 320px) {
   .tourist-areas__wrapper-1 {
     padding-bottom: 25px;
-    border-bottom: 1px solid #e5e5e5;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -237,7 +245,6 @@ body {
 
 @media (min-width: 320px) {
   .tourist-areas__wrapper {
-    border-bottom: 1px solid #e5e5e5;
     padding-bottom: 25px;
     padding-left: 20px;
     padding-right: 20px;
@@ -304,21 +311,10 @@ body {
   }
 }
 
-@media (min-width: 320px) {
-  .tourist-areas__big-img {
-    margin-bottom: 15px;
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
 @media (min-width: 768px) {
   .tourist-areas__big-img {
-    height: 400px;
     display: block;
-    margin-bottom: 0;
     width: 100%;
-    padding: 0;
   }
 }
 
@@ -723,7 +719,8 @@ body {
   .form__visited-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 146px;
+    padding-left: 84px;
+    padding-right: 110px;
   }
 }
 @media (min-width: 1200px) {
@@ -946,7 +943,12 @@ body {
 @media (min-width: 768px) {
   .form__visited-mark {
     bottom: -11px;
-    left: -56px;
+    left: -10px;
+  }
+}
+@media (min-width: 1200px) {
+  .form__visited-mark {
+    left: -54px;
   }
 }
 
@@ -1117,29 +1119,6 @@ body {
   }
 }
 
-.main-header__toggle {
-  background-image: url("../img/mobile/menu-header.svg");
-  background-repeat: no-repeat;
-  width: 23px;
-  height: 23px;
-  border: none;
-  padding: 0;
-  font: inherit;
-  margin-top: 17px;
-  position: absolute;
-  right: 20px;
-}
-@media (min-width: 768px) {
-  .main-header__toggle {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  .main-header__toggle {
-    display: none;
-  }
-}
-
 .main-header__logo {
   margin: 0 auto;
   display: block;
@@ -1180,6 +1159,70 @@ body {
     list-style-type: none;
     display: flex;
   }
+}
+
+.main-nav--opened .main-nav__toggle {
+  right: 50px;
+  position: absolute;
+}
+.main-nav--opened .main-nav__toggle::before, .main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 18px;
+  width: 22px;
+  height: 3px;
+  background-color: #ffffff;
+}
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../img/mobile/menu-header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23px;
+  height: 23px;
+  border: none;
+  position: absolute;
+  padding: 0;
+  font: inherit;
+  top: 0;
+  margin-top: 17px;
+  right: 20px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .main-nav--closed .main-nav__toggle {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav--closed .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav__toggle {
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+
+.main-nav--closed .site-list__item {
+  display: none;
+}
+.main-nav--closed .site-list__item-active {
+  display: block;
+}
+
+.main-nav--nojs .main-nav--toggle {
+  display: none;
 }
 
 .maps {
@@ -1849,7 +1892,8 @@ body {
 @media (min-width: 320px) {
   .site-list__item {
     text-align: center;
-    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   }
   .site-list__item:hover {
     background-color: #669ec0;
@@ -1867,6 +1911,7 @@ body {
     margin: 0;
     text-align: center;
     box-shadow: none;
+    border: none;
   }
   .site-list__item:hover, .site-list__item:active {
     background-color: #ffffff;
