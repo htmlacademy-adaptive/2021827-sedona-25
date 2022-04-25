@@ -9,173 +9,176 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <!-- Навигация с картинкой и кнопкой  -->
-    <!-- Кнопку меню добавить фоном в css -->
-    <div class="main-header__wrapper">
-      <a class="main-header__logo">
-        <img src="./img/mobile/header-logo.svg" width="185" height="96" alt=Логотип.>
-      </a>
-      <button class="main-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </div>
-    <!-- Список меню  -->
-    <nav class="main-header__main-nav main-nav">
-      <!-- Div центровщик -->
+  <div class="page__wrapper">
+    <header class="main-header">
+      <!-- Навигация с картинкой и кнопкой  -->
+      <!-- Кнопку меню добавить фоном в css -->
+      <div class="main-header__wrapper">
+        <a class="main-header__logo">
+          <img src="./img/mobile/header-logo.svg" width="185" height="96" alt=Логотип.>
+        </a>
+      </div>
+      <!-- Список меню  -->
+      <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <!-- Элемент c миксом -->
+        <ul class="main-nav__list site-list">
+          <!-- Модификатор главной ( подчеркивание ) -->
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link site-list__item--current" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фото и Видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <!--  Заголовок первого уровня (скрыт) и фоновый background и svg -->
+      <div class="main-container__wrapper">
+        <h1 class="visually-hidden">Туристический городок Седона.</h1>
+        <img class="main-container__images" src="./img/mobile/welcome-sedona.svg" width="282" height="214"
+          alt="Welcome to Sedona.">
+      </div>
+      <!--  Заголовок 2 уровня  -->
+      <section class="main-container__presentation presentation">
+        <!-- Обертка для центрирования -->
+        <div class="presentation__wrapper container">
+          <h2 class="presentation__slogan">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+          <p class="presentation__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <!-- Списки -->
+        <ul class="presentation__list">
+          <li class="presentation__item presentation__item--1">
+            <!-- модификатор blue  -->
+            <div class="presentation__wrapper-blue">
+              <div class="presentation__container">
+                <h3 class="presentation__title-blue">Настоящий городок</h3>
+                <span class="presentation__number">— №1 —</span>
+                <p class="presentation__information">Седона — не
+                  аттракцион для туристов, там
+                  течёт своя жизнь</p>
+              </div>
+              <img class="presentation__images-item" src="./img/mobile/home-foto.jpg" width="320" height="260"
+                alt="Дом.">
+            </div>
+            <ul class="presentation__detail container">
+              <li class="presentation__detail-item presentation__detail-item--1">
+                <h4 class="presentation__header">Жилье</h4>
+                <p class="presentation__paragraph"> Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в кино!
+                </p>
+              </li>
+              <li class="presentation__detail-item presentation__detail-item--2">
+                <h4 class="presentation__header">Еда</h4>
+                <p class="presentation__paragraph">Всегда заказывайте топовый фирменный бургер, вы не
+                  разочаруетесь!
+                </p>
+              </li>
+              <li class="presentation__detail-item presentation__detail-item--3">
+                <h4 class="presentation__header">Сувениры</h4>
+                <p class="presentation__paragraph">Не только китайского,но и настоящего местного производства!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="presentation__item presentation__item--2">
+            <div class="presentation__wrapper-blue">
+              <div class="presentation__container presentation__container-order">
+                <h3 class="presentation__title-blue">Там есть мост дьявола</h3>
+                <span class="presentation__number">— №2 —</span>
+                <p class="presentation__information">Да, по нему можно
+                  пройти!Если вы осмелитесь,
+                  разумеется</p>
+              </div>
+              <img class="presentation__image" src="./img/mobile/canyon-foto.jpg" width="320" height="260"
+                alt="фото каньона.">
+            </div> <!-- Модификация ( картинка меняет свое местоположение) -->
+          </li>
 
-      <!-- Элемент c миксом -->
-      <ul class="main-nav__list site-list">
-        <!-- Модификатор главной ( подчеркивание ) -->
-        <li class="site-list__item site-list__item--current">
-          <a class="site-list__link" href="#">Главная</a>
+          <li class="presentation__item presentation__item--4">
+            <div class="presentation__wrapper-list">
+              <h3 class="presentation__title">Небольшая площадь</h3>
+              <span class="presentation__number">— №3 —</span>
+              <p class="presentation__information">Все интересные места находятся очень близко</p>
+            </div>
+          </li>
+
+
+          <li class="presentation__item presentation__item--5">
+            <div class="presentation__wrapper-list">
+              <h3 class="presentation__title">Красивая дорога</h3>
+              <span class="presentation__number">— №4 —</span>
+              <p class="presentation__information">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+
+
+          <li class="presentation__item presentation__item--6">
+            <div class="presentation__wrapper-end">
+              <h3 class="presentation__title">Мало туристов</h3>
+              <span class="presentation__number">— №5 —</span>
+              <p class="presentation__information">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+      <section class="main-container__search-hotel search-hotel container">
+        <h2 class="search-hotel__title">Заинтересовались?</h2>
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам
+          лучшие предложения гостиниц в Седоне</p>
+        <a class="search-hotel__button" type="button" href="#"><span class="search-hotel__button-title">найти
+            гостиницу</span></a>
+      </section>
+      <!-- Maps -->
+      <section class="main-container__maps maps">
+        <h2 class="visually-hidden">Карта.</h2>
+        <div class="maps__wrapper">
+          <img class="maps__image" src="./img/mobile/map-mobile.jpg" width="320" height="350" alt="Мобильная карта.">
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer container">
+      <!-- Иконки сделать фоном в сss-->
+      <a class="main-footer__hashtag">#VISITSEDONA</a>
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
+          </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Фото и Видео</a>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">Мы в Телеграм
+          </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Форма отзыва</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">html Academy</a>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе
+          </a>
         </li>
       </ul>
-    </nav>
-  </header>
-  <main class="main-container">
-    <!--  Заголовок первого уровня (скрыт) и фоновый background и svg -->
-    <div class="main-container__wrapper">
-      <h1 class="visually-hidden">Туристический городок Седона.</h1>
-      <img class="main-container__images" src="./img/mobile/welcome-sedona.svg" width="282" height="214"
-        alt="Welcome to Sedona.">
-    </div>
-    <!--  Заголовок 2 уровня  -->
-    <section class="main-container__presentation presentation">
-      <!-- Обертка для центрирования -->
-      <div class="presentation__wrapper container">
-        <h2 class="presentation__slogan">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-        <p class="presentation__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <div class="main-footer__academy academy">
+        <b class="academy__text">Разработано</b>
+        <a class="academy__link" href="https://htmlacademy.ru">
+          <svg class="academy__link-svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+              fill="#000" />
+          </svg>
+        </a>
       </div>
-      <!-- Списки -->
-      <ul class="presentation__list">
-        <li class="presentation__item presentation__item--1">
-          <!-- модификатор blue  -->
-          <div class="presentation__wrapper-blue">
-            <div class="presentation__container">
-              <h3 class="presentation__title-blue">Настоящий городок</h3>
-              <span class="presentation__number">— №1 —</span>
-              <p class="presentation__information">Седона — не
-                аттракцион для туристов, там
-                течёт своя жизнь</p>
-            </div>
-            <img class="presentation__images-item" src="./img/mobile/home-foto.jpg" width="320" height="260" alt="Дом.">
-          </div>
-          <ul class="presentation__detail container">
-            <li class="presentation__detail-item presentation__detail-item--1">
-              <h4 class="presentation__header">Жилье</h4>
-              <p class="presentation__paragraph"> Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в кино!
-              </p>
-            </li>
-            <li class="presentation__detail-item presentation__detail-item--2">
-              <h4 class="presentation__header">Еда</h4>
-              <p class="presentation__paragraph">Всегда заказывайте топовый фирменный бургер, вы не
-                разочаруетесь!
-              </p>
-            </li>
-            <li class="presentation__detail-item presentation__detail-item--3">
-              <h4 class="presentation__header">Сувениры</h4>
-              <p class="presentation__paragraph">Не только китайского,но и настоящего местного производства!
-              </p>
-            </li>
-          </ul>
-        </li>
-        <li class="presentation__item presentation__item--2">
-          <div class="presentation__wrapper-blue">
-            <div class="presentation__container presentation__container-order">
-              <h3 class="presentation__title-blue">Там есть мост дьявола</h3>
-              <span class="presentation__number">— №2 —</span>
-              <p class="presentation__information">Да, по нему можно
-                пройти!Если вы осмелитесь,
-                разумеется</p>
-            </div>
-            <img class="presentation__image" src="./img/mobile/canyon-foto.jpg" width="320" height="260"
-              alt="фото каньона.">
-          </div> <!-- Модификация ( картинка меняет свое местоположение) -->
-        </li>
+    </footer>
+  </div>
 
-        <li class="presentation__item presentation__item--4">
-          <div class="presentation__wrapper-list">
-            <h3 class="presentation__title">Небольшая площадь</h3>
-            <span class="presentation__number">— №3 —</span>
-            <p class="presentation__information">Все интересные места находятся очень близко</p>
-          </div>
-        </li>
-
-
-        <li class="presentation__item presentation__item--5">
-          <div class="presentation__wrapper-list">
-            <h3 class="presentation__title">Красивая дорога</h3>
-            <span class="presentation__number">— №4 —</span>
-            <p class="presentation__information">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </li>
-
-
-        <li class="presentation__item presentation__item--6">
-          <div class="presentation__wrapper-end">
-            <h3 class="presentation__title">Мало туристов</h3>
-            <span class="presentation__number">— №5 —</span>
-            <p class="presentation__information">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-        </li>
-
-      </ul>
-    </section>
-    <section class="main-container__search-hotel search-hotel container">
-      <h2 class="search-hotel__title">Заинтересовались?</h2>
-      <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам
-        лучшие предложения гостиниц в Седоне</p>
-      <a class="search-hotel__button" type="button" href="#"><span class="search-hotel__button-title">найти
-          гостиницу</span></a>
-    </section>
-    <!-- Maps -->
-    <section class="main-container__maps maps">
-      <h2 class="visually-hidden">Карта.</h2>
-      <div class="maps__wrapper">
-        <img class="maps__image" src="./img/mobile/map-mobile.jpg" width="320" height="350" alt="Мобильная карта.">
-      </div>
-    </section>
-  </main>
-
-  <footer class="main-footer container">
-    <!-- Иконки сделать фоном в сss-->
-    <a class="main-footer__hashtag">#VISITSEDONA</a>
-    <ul class="main-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--telegram" href="#">Мы в Телеграм
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе
-        </a>
-      </li>
-    </ul>
-    <div class="main-footer__academy academy">
-      <b class="academy__text">Разработано</b>
-      <a class="academy__link" href="https://htmlacademy.ru">
-        <svg class="academy__link-svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
-            fill="#000" />
-        </svg>
-      </a>
-    </div>
-  </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

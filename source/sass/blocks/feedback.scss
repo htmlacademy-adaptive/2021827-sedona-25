@@ -5,15 +5,47 @@
   text-align: center;
   margin-bottom: 24px;
   margin-top: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .feedback__intro {
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .feedback {
   padding-bottom: 28px;
+  padding-top: 36px;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 102px;
+    border: none;
+    padding-left: 167px;
+    padding-right: 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+    padding-bottom: 67px;
+    padding-left: 382px;
+    padding-right: 384px;
+  }
 }

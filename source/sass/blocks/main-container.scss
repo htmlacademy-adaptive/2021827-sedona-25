@@ -44,7 +44,6 @@
   background-size: 100% auto;
   min-height: 214px;
   padding-bottom: 33px;
-  margin-bottom: 36px;
 }
 
 .main-container__images {
@@ -79,12 +78,5 @@
     padding-bottom: 62px;
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-.movie-presentation {
-  @media (min-width: $tablet-width) {
-    padding-left: 60px;
-    padding-right: 60px;
   }
 }

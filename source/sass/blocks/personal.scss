@@ -19,3 +19,20 @@
   margin-right: 0;
   padding-bottom: 34px;
 }
+
+.personal-information {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+}
+
+.personal-information__filter {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
