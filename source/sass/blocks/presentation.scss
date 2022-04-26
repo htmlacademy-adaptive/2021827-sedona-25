@@ -25,6 +25,14 @@
     margin-bottom: 35px;
     text-transform: uppercase;
     text-align: center;
+
+    br {
+      display: none;
+    }
+
+    .presentation__slogan-space {
+      display: block;
+    }
   }
 }
 
@@ -35,11 +43,15 @@
   @media (min-width: $tablet-width) {
     padding-top: 47px;
     padding-bottom: 56px;
+    padding-left: 124px;
+    padding-right: 124px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 59px;
     padding-bottom: 45px;
+    padding-left: 358px;
+    padding-right: 359px;
   }
 }
 
@@ -82,7 +94,7 @@
 .presentation__wrapper-list {
   @media (min-width: $mobile-width-only) {
     margin: 0 auto;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
     padding-top: 26px;
     padding-bottom: 24px;
     padding-left: 10px;
@@ -146,8 +158,8 @@
   text-transform: uppercase;
   padding-top: 54px;
   padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 16px;
+  padding-right: 22px;
 
   @media (min-width: $tablet-width) {
     background-color: #81b3d2;
@@ -156,6 +168,8 @@
     text-transform: uppercase;
     padding-top: 46px;
     padding-bottom: 44px;
+    padding-left: 25px;
+    padding-right: 25px;
     width: 33%;
     flex-wrap: wrap;
     flex-direction: column;
@@ -163,20 +177,40 @@
 
   @media (min-width: $desktop-width) {
     width: 400px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 53px;
+    padding-right: 52px;
     padding-top: 47px;
     padding-bottom: 57px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .presentation__container-order {
+.presentation__container-order {
+  @media (min-width: $tablet-width) {
     order: 2;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 36px;
+    padding-right: 36px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 79px;
+    padding-right: 78px;
+
+    br {
+      display: block;
+    }
   }
 }
+// исправить
+@media (min-width: $desktop-width) {
+  .presentation__information-space {
+    display: block;
+  }
+}
+//
 
 .presentation__wrapper-blue {
   margin-bottom: 25px;
@@ -200,6 +234,22 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .presentation__container .presentation__number {
@@ -219,7 +269,32 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0 auto;
+
+  @media (min-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 21px;
+
+    br {
+      display: none;
+    }
+  }
 }
+
 
 .presentation__header {
   font-size: 18px;
@@ -230,11 +305,13 @@
 }
 
 .presentation__paragraph {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: rgba(51, 51, 51, 1);
-  margin: 0 auto 25px;
+  @media (min-width: $mobile-width-only) {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 1);
+    margin: 0 auto 25px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -255,8 +332,8 @@
 
 .presentation__item--4 .presentation__information {
   color: #000000;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto 1px auto;
@@ -272,6 +349,10 @@
     width: 33.33%;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .presentation__detail-item--3 .presentation__paragraph {
@@ -282,46 +363,97 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .presentation__detail-item--1 {
+.presentation__detail-item--1 {
+  @media (min-width: $tablet-width) {
     width: 33%;
-    padding-left: 10px;
-    padding-right: 10px;
     padding-top: 158px;
     padding-bottom: 59px;
     text-align: center;
     align-items: center;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+    padding-right: 58px;
+  }
 }
 
+.presentation__paragraph-1 {
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+
 .presentation__detail-item--2 {
-  @media (min-width: $tablet-width) {
-    width: 33%;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 158px;
-    padding-bottom: 59px;
-    text-align: center;
-    align-items: center;
+  @media (min-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 36px;
+      padding-right: 36px;
+      width: 33%;
+      padding-top: 158px;
+      padding-bottom: 59px;
+      text-align: center;
+      align-items: center;
+
+      br {
+        display: block;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 58px;
+      padding-right: 57px;
+
+      br {
+        display: none;
+      }
+    }
   }
 }
 
 .presentation__detail-item--3 {
   @media (min-width: $tablet-width) {
     width: 33%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 59px;
     padding-top: 158px;
     text-align: center;
     align-items: center;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+    padding-right: 57px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .presentation__item--5 .presentation__information {
   color: #000000;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto 1px auto;
@@ -334,7 +466,7 @@
 
 .presentation__item--5 {
   background-color: rgba(238, 238, 238, 1);
-  padding: 0 20px;
+  padding: 0 22px;
 
   @media (min-width: $tablet-width) {
     width: 33.33%;
@@ -355,8 +487,8 @@
 
 .presentation__item--6 .presentation__information {
   color: #000000;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
@@ -365,13 +497,17 @@
 
 .presentation__title {
   font-weight: 700;
-  font-size: 21px;
-  line-height: 15px;
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .presentation__number {
