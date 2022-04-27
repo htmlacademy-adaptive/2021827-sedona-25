@@ -107,6 +107,8 @@
     border: none;
     padding-top: 42px;
     padding-bottom: 63px;
+    padding-left: 33px;
+    padding-right: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,8 +117,51 @@
     border: none;
     padding-top: 42px;
     padding-bottom: 62px;
+    padding-left: 42px;
+    padding-right: 43px;
   }
 }
+
+.presentation__wrapper-list-2 {
+  @media (min-width: $tablet-width) {
+    padding-left: 46px;
+    padding-right: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
+
+.presentation__information-space-3 {
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.presentation__information-space-2 {
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 
 .presentation__wrapper-end {
   padding-top: 24px;
@@ -130,6 +175,8 @@
     border: none;
     padding-top: 42px;
     padding-bottom: 63px;
+    padding-left: 41px;
+    padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,6 +184,8 @@
     border: none;
     padding-top: 43px;
     padding-bottom: 62px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 
@@ -348,10 +397,7 @@
   @media (min-width: $tablet-width) {
     width: 33.33%;
     justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-
+    padding: 0;
   }
 }
 
@@ -471,24 +517,26 @@
   @media (min-width: $tablet-width) {
     width: 33.33%;
     justify-content: space-between;
+    padding: 0;
   }
 }
 
 .presentation__item--6 {
   background-color: rgba(238, 238, 238, 1);
-  padding: 0 20px;
+  padding: 0 21px;
 
 
   @media (min-width: $tablet-width) {
     width: 33.33%;
     justify-content: space-between;
+    padding: 0;
   }
 }
 
 .presentation__item--6 .presentation__information {
   color: #000000;
   font-size: 14px;
-  line-height: 21px;;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
