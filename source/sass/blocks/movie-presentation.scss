@@ -27,6 +27,8 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 38px;
+  padding-left: 8px;
+  padding-right: 6px;
 
   @media (min-width: $tablet-width) {
     font: inherit;
@@ -37,17 +39,16 @@
 
   @media (min-width: $desktop-width) {
     font: inherit;
+    padding-left: 125px;
+    padding-right: 125px;
   }
 }
 
 .movie-presentation__image {
-  @media (min-width: $tablet-width) {
-    // width: 648px;
     width: 100%;
-  }
 
   @media (min-width: $desktop-width) {
-    width: calc(800 / 1200 * 100%);
+    width: 100%;
   }
 }
 
@@ -61,4 +62,22 @@
     padding-left: 199px;
     padding-right: 201px;
   }
+}
+
+.movie-presentation__play {
+  background-image: url("../img/mobile/play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 54px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+}
+
+.movie-presentation__wrapper {
+  position: relative;
 }
