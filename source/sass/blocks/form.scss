@@ -15,6 +15,7 @@
 
 .form__naming {
   text-transform: uppercase;
+  padding-left: 16px;
 }
 
 .form__name {
@@ -54,6 +55,7 @@
 
 .form__contacts-naming {
   text-transform: uppercase;
+  padding-left: 16px;
 }
 
 .form__contacts-name {
@@ -123,6 +125,12 @@
   border: none;
   min-width: 279px;
   min-height: 150px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -253,6 +261,7 @@
   @media (min-width: $tablet-width) {
     border-bottom: none;
     margin: 0;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $tablet-width) {
@@ -313,6 +322,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 101px;
+    padding-right: 0;
   }
 }
 
@@ -402,11 +412,16 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     padding-left: 80px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
     width: 33.33%;
   }
+}
+
+.form__impression-item:nth-child(3) {
+  margin-bottom: 0;
 }
 
 .form__impression-item:nth-child(2) {
@@ -444,12 +459,16 @@
 }
 
 .form__button-wrapper {
-  @media (min-width: $mobile-width-only) {
     display: flex;
     justify-content: end;
     align-items: center;
     flex-wrap: wrap;
-  }
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
 
   @media (min-width: $desktop-width) {
     padding-left: 90px;
@@ -482,6 +501,10 @@
     height: 40px;
     background-color: rgba(242, 242, 242, 1);
     left: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -8px;
   }
 }
 
@@ -553,4 +576,12 @@
   background-image: url("../img/mobile/mail.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.form__wrapper {
+  margin-bottom: 16px;
+}
+
+.form__wrapper-1 {
+  margin-bottom: 0;
 }
