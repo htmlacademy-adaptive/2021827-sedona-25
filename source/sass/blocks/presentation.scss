@@ -592,30 +592,39 @@
 }
 
 .presentation__icon-home::before {
-  content: url("../img/mobile/home-mob.svg");
+  content: "";
+  background-image:  url("../img/mobile/home-mob.svg");
   width: 39px;
   height: 37px;
   position: absolute;
   display: block;
   left: -45px;
   bottom: -4px;
+  background-size: 39px;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
-    content: url("../img/mobile/home-dek.svg");
+    background-size: 75px;
     width: 75px;
     height: 72px;
     bottom: 46px;
-    left: 30%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    left: 101px;
+    left: 50%;
     bottom: 46px;
   }
 }
 
 .presentation__icon-burger::before {
-  content: url("../img/mobile/burger-mob.svg");
+  content: "";
+  background-image: url("../img/mobile/burger-mob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
   width: 40px;
   height: 35px;
   position: absolute;
@@ -624,22 +633,27 @@
   bottom: -4px;
 
   @media (min-width: $tablet-width) {
-    content: url("../img/mobile/burger-deks.svg");
     width: 76px;
+    background-size: 76px;
     height: 68px;
     bottom: 46px;
-    left: 30%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
 
   @media (min-width: $desktop-width) {
-    left: 101px;
+    left: 50%;
     bottom: 46px;
   }
 }
 
 .presentation__icon-gifts::before {
-  content: url("../img/mobile/gift-mob.svg");
+  content: "";
+  background-image: url("../img/mobile/gift-mob.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
   width: 32px;
   height: 38px;
   position: absolute;
@@ -648,15 +662,16 @@
   bottom: -4px;
 
   @media (min-width: $tablet-width) {
-    content: url("../img/mobile/gift-deks.svg");
+    background-size: 64px;
     width: 64px;
     height: 75px;
     bottom: 40px;
-    left: 30%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    left: 109px;
+    left: 50%;
     bottom: 40px;
   }
 }
