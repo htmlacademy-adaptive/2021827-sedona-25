@@ -8,6 +8,7 @@
     background-color: $white;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -115,15 +116,17 @@
   }
 }
 
-@media (min-width: $mobile-width-only) {
   .main-nav--closed .main-nav__list {
     display: none;
 
     &-active {
       display: block;
     }
+
+   @media (min-width: $tablet-width) {
+     display: flex;
+   }
   }
-}
 
 @media (min-width: $mobile-width-only) {
   .main-nav--nojs .main-nav--toggle {

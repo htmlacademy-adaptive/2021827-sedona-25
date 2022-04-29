@@ -35,6 +35,12 @@
   }
 }
 
+.site-list__item:nth-child(6n) {
+  @media (min-width: $tablet-width) {
+    margin-right: 27.34375%;
+  }
+}
+
 .site-list__item {
   @media (min-width: $mobile-width-only) {
     text-align: center;
