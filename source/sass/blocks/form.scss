@@ -59,7 +59,7 @@
 }
 
 .form__contacts-name {
-  width: 80%;
+  width: calc(100% - 58px);
   background-color: #f2f2f2;
   border: none;
   height: 58px;
@@ -200,7 +200,6 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    border-left: 1px solid rgba(219, 219, 219, 1);
     max-width: 400px;
     font-size: 21px;
     line-height: 26px;
@@ -210,6 +209,11 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 55px;
   }
+}
+
+.form__impression-control {
+  display: flex;
+  align-items: center;
 }
 
 .form__impression-list {
@@ -240,8 +244,10 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding-bottom: 58px;
+    padding-bottom: 55px;
     margin-top: 48px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -321,7 +327,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 101px;
+    padding-left: 0;
     padding-right: 0;
   }
 }
@@ -407,11 +413,11 @@
 .form__impression-item {
   margin-bottom: 16px;
   position: relative;
-  padding-left: 60px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    padding-left: 80px;
+    padding-left: 50px;
     margin-bottom: 36px;
   }
 
@@ -426,12 +432,15 @@
 
 .form__impression-item:nth-child(2) {
   padding-right: 36px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .form__visited-item {
   margin-bottom: 36px;
   position: relative;
-  padding-left: 60px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -478,13 +487,12 @@
 }
 
 .form__impression-mark {
-  position: absolute;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   background-color: rgba(242, 242, 242, 1);
-  left: 0;
-  bottom: -7px;
+  position: relative;
+  margin-right: 16px;
 
   &:hover {
     background-color: rgba(229, 229, 229, 1);
@@ -495,16 +503,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     background-color: rgba(242, 242, 242, 1);
-    left: 38px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -8px;
   }
 }
 
@@ -527,10 +529,8 @@
 .form__visited-mark {
   width: 46px;
   height: 46px;
-  position: absolute;
   background-color: rgba(242, 242, 242, 1);
-  bottom: -11px;
-  left: 0;
+  margin-right: 16px;
 
   &:hover {
     background-color: rgba(229, 229, 229, 1);
@@ -541,12 +541,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    bottom: -11px;
-    left: -10px;
   }
 
   @media (min-width: $desktop-width) {
-    left: -54px;
   }
 }
 
@@ -584,4 +581,9 @@
 
 .form__wrapper-1 {
   margin-bottom: 0;
+}
+
+.form__visited-control {
+  display: flex;
+  align-items: center;
 }

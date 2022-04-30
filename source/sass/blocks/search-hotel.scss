@@ -1,12 +1,10 @@
 .search-hotel {
-  @media (min-width: $mobile-width-only) {
     padding-bottom: 49px;
     padding-top: 49px;
 
     br {
       display: none;
     }
-  }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 61px;

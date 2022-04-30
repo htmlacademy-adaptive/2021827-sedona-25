@@ -11,10 +11,8 @@
 }
 
 .maps iframe {
-  @media (min-width: $mobile-width-only) {
     display: block;
     border: none;
     width: 100%;
     height: 350px;
-  }
 }

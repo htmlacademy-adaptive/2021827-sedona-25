@@ -6,36 +6,11 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-// Пытался сделать графикой
-// .main-nav--opened .main-nav__toggle {
-//   background-image: url("../img/mobile/exit-menu.svg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   width: 23px;
-//   height: 23px;
-//   border: none;
-//   position: absolute;
-//   padding: 0;
-//   top: 0;
-//   margin-top: 17px;
-//   right: 20px;
-//   cursor: pointer;
-
-//   @media (min-width: $tablet-width) {
-//     display: none;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     display: none;
-//   }
-// }
-@media (min-width: $mobile-width-only) {
   .main-nav--opened .main-nav__toggle {
     right: 20px;
     position: absolute;
@@ -75,7 +50,7 @@
       top: 8px;
     }
   }
-}
+
 
 .main-nav--closed .main-nav__toggle {
   background-image: url("../img/mobile/menu-header.svg");
@@ -100,7 +75,6 @@
   }
 }
 
-@media (min-width: $mobile-width-only) {
   .main-nav__toggle {
     width: 22px;
     height: 22px;
@@ -114,37 +88,30 @@
       opacity: 0.3;
     }
   }
-}
 
-  .main-nav--closed .main-nav__list {
-    display: none;
+.main-nav--closed .main-nav__list {
+  display: none;
 
     &-active {
       display: block;
     }
 
-   @media (min-width: $tablet-width) {
-     display: flex;
-   }
-  }
-
-@media (min-width: $mobile-width-only) {
-  .main-nav--nojs .main-nav--toggle {
-    display: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
+  .main-nav--nojs .main-nav--toggle {
+    display: none;
+  }
 
 .main-nav--opened {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-}
 
-
-@media (min-width: $tablet-width) {
-  .main-nav--opened {
+  @media (min-width: $tablet-width) {
     position: static;
   }
 }

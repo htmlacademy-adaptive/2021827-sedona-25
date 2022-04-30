@@ -1,9 +1,7 @@
 .main-header__wrapper {
-  @media (min-width: $mobile-width-only) {
     padding: 0 20px;
     display: flex;
     position: relative;
-  }
 
   @media (min-width: $tablet-width) {
     width: 185px;
@@ -36,6 +34,5 @@
     display: flex;
     width: 1020px;
     margin: 0 auto;
-    height: 56px;
   }
 }
