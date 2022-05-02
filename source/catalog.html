@@ -17,18 +17,19 @@
         <a class="main-header__logo">
           <img src="./img/mobile/header-logo.svg" width="185" height="96" alt=Логотип.>
         </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </div>
       <!-- Список меню  -->
-      <nav class="main-header__main-nav main-nav">
+      <nav class="main-header__main-nav main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <!-- Элемент c миксом -->
         <ul class="main-nav__list site-list">
           <!-- Модификатор главной ( подчеркивание ) -->
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link site-list__item--current" href="#">Фото и Видео</a>
           </li>
           <li class="site-list__item">
@@ -64,12 +65,21 @@
                 width="280" height="280" alt="фото дороги.">
             </a>
             <div class="tourist-areas__wrapper-1">
-              <h3 class="tourist-areas__slogan">Неродные просторы</h3>
-              <p class="tourist-areas__author">Автор фото: Борис </p>
-              <button class="tourist-areas__like" type="button">
-                <span class="visually-hidden">лайк</span>
-              </button>
-              <span class="tourist-areas__number">1350</span>
+              <div class="tourist-areas__wrapper-2">
+                <h3 class="tourist-areas__slogan">Неродные просторы</h3>
+                <p class="tourist-areas__author">Автор фото: Борис </p>
+              </div>
+              <div class="tourist-areas__wrapper-3">
+                <button class="tourist-areas__like" type="button">
+                  <svg class="tourist-areas__icons" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3"
+                      d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">лайк</span>
+                </button>
+                <span class="tourist-areas__number">1350</span>
+              </div>
             </div>
           </li>
           <li class="tourist-areas__item tourist-areas__item-2">
@@ -78,12 +88,21 @@
                 alt="фото кактуса.">
             </a>
             <div class="tourist-areas__wrapper">
-              <h3 class="tourist-areas__slogan">Местная растительность</h3>
-              <p class="tourist-areas__author">Автор фото: Сергей </p>
-              <button class="tourist-areas__like" type="button">
-                <span class="visually-hidden">лайк</span>
-              </button>
-              <span class="tourist-areas__number">143</span>
+              <div class="tourist-areas__wrapper-2">
+                <h3 class="tourist-areas__slogan">Местная растительность</h3>
+                <p class="tourist-areas__author">Автор фото: Сергей </p>
+              </div>
+              <div class="tourist-areas__wrapper-3">
+                <button class="tourist-areas__like" type="button">
+                  <svg class="tourist-areas__icons" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3"
+                      d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">лайк.</span>
+                </button>
+                <span class="tourist-areas__number">143</span>
+              </div>
             </div>
           </li>
           <li class="tourist-areas__item tourist-areas__item-2">
@@ -92,12 +111,21 @@
                 alt="лес на фоне.">
             </a>
             <div class="tourist-areas__wrapper">
-              <h3 class="tourist-areas__slogan">Дорога на север</h3>
-              <p class="tourist-areas__author">Автор фото: Петр </p>
-              <button class="tourist-areas__like" type="button">
-                <span class="visually-hidden">лайк</span>
-              </button>
-              <span class="tourist-areas__number">96</span>
+              <div class="tourist-areas__wrapper-2">
+                <h3 class="tourist-areas__slogan">Дорога на север</h3>
+                <p class="tourist-areas__author">Автор фото: Петр </p>
+              </div>
+              <div class="tourist-areas__wrapper-3">
+                <button class="tourist-areas__like" type="button">
+                  <svg class="tourist-areas__icons" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3"
+                      d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">лайк</span>
+                </button>
+                <span class="tourist-areas__number">96</span>
+              </div>
             </div>
           </li>
           <li class="tourist-areas__item tourist-areas__item-2">
@@ -106,12 +134,21 @@
                 alt="Каньон.">
             </a>
             <div class="tourist-areas__wrapper">
-              <h3 class="tourist-areas__slogan">Мост Дьявола</h3>
-              <p class="tourist-areas__author">Автор фото: Антон </p>
-              <button class="tourist-areas__like" type="button">
-                <span class="visually-hidden">лайк</span>
-              </button>
-              <span class="tourist-areas__number">254</span>
+              <div class="tourist-areas__wrapper-2">
+                <h3 class="tourist-areas__slogan">Мост Дьявола</h3>
+                <p class="tourist-areas__author">Автор фото: Антон </p>
+              </div>
+              <div class="tourist-areas__wrapper-3">
+                <button class="tourist-areas__like" type="button">
+                  <svg class="tourist-areas__icons" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3"
+                      d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">лайк</span>
+                </button>
+                <span class="tourist-areas__number">254</span>
+              </div>
             </div>
           </li>
         </ul>
@@ -123,7 +160,7 @@
         <!-- Видео -->
         <div class="movie-presentation__wrapper">
           <img class="movie-presentation__image" src="./img/mobile/video-catolog.jpg" alt="Видео.">
-          <button class="movie-presentation__play" type="button">Play</button>
+          <button class="movie-presentation__play" type="button"></button>
         </div>
       </section>
     </main>
@@ -132,15 +169,33 @@
       <a class="main-footer__hashtag">#VISITSEDONA</a>
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <svg class="social__link-icons" width="24" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.45.948c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.45.288 4.198 0 3.527 0H.9C.15 0 0 .347 0 .73c0 .682.89 4.07 4.145 8.551C6.315 12.341 9.37 14 12.153 14c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.11 13.216 19.403 14 20.405 14h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
+                fill="#fff" />
+            </svg>
+            <span class="visually-hidden">Мы Вконтакте.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">Мы в Телеграм
+          <a class="social__link social__link--telegram" href="#">
+            <svg class="social__link-icons" width="22" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m21.44 1.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.557-2.33 2.24c-.258.259-.473.474-.97.474l.347-4.917 8.948-8.086c.39-.347-.084-.54-.604-.192L6.022 10.314 1.26 8.823C.224 8.5.205 7.787 1.476 7.29L20.104.113c.862-.323 1.617.192 1.335 1.51Z"
+                fill="#fff" />
+            </svg>
+            <span class="visually-hidden">Мы в телеграме.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg class="social__link-youtube" width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.181 0H2.813C1.306 0 0 1.3 0 2.8v8.3C0 12.7 1.306 14 2.813 14h14.368c1.608 0 2.814-1.3 2.814-2.8V2.8c.1-1.5-1.206-2.8-2.814-2.8ZM7.033 10.4V3.6L13.866 7l-6.833 3.4Z"
+                fill="#fff" />
+            </svg>
+            <span class="visually-hidden">Мы в ютубе.</span>
           </a>
         </li>
       </ul>
@@ -156,6 +211,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

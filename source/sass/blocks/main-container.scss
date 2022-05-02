@@ -64,13 +64,13 @@
 
 .main-container__catalog-card {
   padding-top: 33px;
-  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     padding-top: 62px;
     padding-bottom: 58px;
     padding-left: 60px;
     padding-right: 60px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

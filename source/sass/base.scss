@@ -1,5 +1,4 @@
 body {
-  background-color: $white;
   margin: 0 auto;
   height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -7,6 +6,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: $black;
+  background-color: rgb( 242, 242, 242);
 }
 
 *,
@@ -19,4 +19,5 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+  background-color: rgba(255, 255, 255, 1);
 }

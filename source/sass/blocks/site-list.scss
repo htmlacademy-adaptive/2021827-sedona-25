@@ -1,5 +1,4 @@
 .site-list__link {
-  @media (min-width: $mobile-width-only) {
     display: block;
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
@@ -13,7 +12,6 @@
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
-  }
 
   @media (min-width: $tablet-width) {
     text-decoration: none;
@@ -36,7 +34,6 @@
 }
 
 .site-list__item {
-  @media (min-width: $mobile-width-only) {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
@@ -49,7 +46,6 @@
       background-color: rgba(84, 150, 189, 1);
       color: rgba(255, 255, 255, 0.3);
     }
-  }
 
   @media (min-width: $tablet-width) {
     width: calc(130 / 768 * 100%);
@@ -75,6 +71,12 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item:nth-child(2) {
+    margin-right: calc(210 / 768 * 100%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item:nth-child(6) {
     margin-right: calc(210 / 768 * 100%);
   }
 }

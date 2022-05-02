@@ -1,10 +1,20 @@
 .search-hotel {
-  padding-bottom: 49px;
-  padding-top: 49px;
+    padding-bottom: 49px;
+    padding-top: 49px;
+
+    br {
+      display: none;
+    }
 
   @media (min-width: $tablet-width) {
     padding-bottom: 61px;
     padding-top: 58px;
+    padding-left: 167px;
+    padding-right: 166px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {
