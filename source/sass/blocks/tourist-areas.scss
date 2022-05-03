@@ -1,9 +1,9 @@
 .tourist-areas {
-    padding-left: 0;
-    list-style-type: none;
-    margin-top: 24px;
-    padding-right: 0;
-    margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 24px;
+  padding-right: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -18,10 +18,10 @@
 }
 
 .tourist-areas__item {
-    margin-bottom: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -78,10 +78,11 @@
 }
 
 .tourist-areas__wrapper-1 {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 80% 20%;
     box-shadow: none;
     justify-content: space-between;
     width: 100%;
@@ -97,6 +98,7 @@
     bottom: 3px;
     width: 100%;
     display: grid;
+    grid-template-columns: 90% 10%;
   }
 }
 
@@ -119,22 +121,23 @@
     padding-top: 32px;
     padding-bottom: 21px;
     padding-right: 20px;
+    padding-left: 40%;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 5 / 5;
+    grid-column: 2 / 3;
   }
 }
 
 .tourist-areas__wrapper {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     border: none;
     background-color: rgba(242, 242, 242, 1);
     padding-bottom: 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 80% 20%;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,6 +147,7 @@
     bottom: 3px;
     display: grid;
     width: 100%;
+    grid-template-columns: 80% 20%;
   }
 }
 
@@ -156,7 +160,7 @@
   margin-bottom: 1px;
 
   @media (min-width: $tablet-width) {
-  padding: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -196,8 +200,8 @@
 }
 
 .tourist-areas__images {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -214,7 +218,7 @@
 
 .tourist-areas__icons path {
   @media (min-width: $desktop-width) {
-  fill: $white;
-  opacity: 1;
+    fill: $white;
+    opacity: 1;
   }
 }
