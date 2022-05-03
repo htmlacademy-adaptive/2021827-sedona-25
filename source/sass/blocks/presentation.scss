@@ -189,7 +189,8 @@
   padding-left: 70px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-left: 0;
     width: 100%;
     padding-right: 0;
@@ -401,7 +402,6 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 33%;
     padding-top: 158px;
     padding-bottom: 59px;
     text-align: center;
@@ -440,7 +440,6 @@
     padding-left: 36px;
     margin-bottom: 0;
     padding-right: 36px;
-    width: 33%;
     padding-top: 158px;
     padding-bottom: 59px;
     text-align: center;
@@ -463,7 +462,6 @@
 
 .presentation__detail-item--3 {
   @media (min-width: $tablet-width) {
-    width: 33%;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 59px;
