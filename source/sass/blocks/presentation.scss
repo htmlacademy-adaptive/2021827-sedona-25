@@ -39,6 +39,7 @@
 .presentation__wrapper {
   padding-top: 32px;
   padding-bottom: 16px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 47px;
@@ -52,6 +53,36 @@
     padding-bottom: 45px;
     padding-left: 358px;
     padding-right: 359px;
+  }
+}
+
+.presentation__wrapper::after {
+  content: "";
+  background-image: url("../img/mobile/vector.svg");
+  position: absolute;
+  height: 37px;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.presentation__wrapper::before {
+  content: "";
+  background-image: url("../img/mobile/vector-two.svg");
+  position: absolute;
+  height: 37px;
+  background-repeat: no-repeat;
+  width: 100%;
+  left: 158px;
+  bottom: -30px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -186,7 +217,7 @@
 .presentation__detail {
   list-style-type: none;
   margin-bottom: 52px;
-  padding-left: 70px;
+  padding-left: 68px;
 
   @media (min-width: $tablet-width) {
     display: grid;

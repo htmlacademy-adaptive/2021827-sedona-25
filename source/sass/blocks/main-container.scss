@@ -36,6 +36,29 @@
   }
 }
 
+.main-container__wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mobile/intro-triangle.svg");
+  display: block;
+  width: 100%;
+  height: 57px;
+  top: 434px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/mobile/vector-tablet.svg");
+    top: 493px;
+    left: 1px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/mobile/vector-dekstop.svg");
+      background-repeat: no-repeat;
+
+    }
+  }
+}
 // Catalog html //
 .main-container__wrapper-catalog {
   background-image: url("../img/mobile/background-catalog-tablet.jpg");
