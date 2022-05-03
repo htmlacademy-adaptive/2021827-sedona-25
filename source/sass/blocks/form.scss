@@ -425,7 +425,7 @@
   }
 }
 
-.form__impression-item:nth-last-child(3) {
+.form__impression-item:last-child {
   margin-bottom: 0;
 }
 
@@ -447,6 +447,10 @@
     width: 25%;
     padding-left: 0;
   }
+}
+
+.form__visited-item:last-child {
+  margin-bottom: 0;
 }
 
 .form__global-wrapper {
@@ -570,8 +574,8 @@
   margin-bottom: 16px;
 }
 
-.form__wrapper-1 {
-  margin-bottom: 0;
+.form__wrapper:last-child {
+  margin: 0;
 }
 
 .form__visited-control {

@@ -101,10 +101,6 @@
   }
 }
 
-.main-nav--nojs .main-nav--toggle {
-  display: none;
-}
-
 .main-nav--opened {
   position: absolute;
   width: 100%;
@@ -114,4 +110,14 @@
   @media (min-width: $tablet-width) {
     position: static;
   }
+}
+
+// No JS
+
+.main-nav--nojs .main-nav--toggle {
+  display: none;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
 }
