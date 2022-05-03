@@ -68,8 +68,12 @@
                   аттракцион для<br> туристов, там
                   течёт своя <br>жизнь</p>
               </div>
-              <img class="presentation__images-item" src="./img/mobile/home-foto.jpg" width="320" height="260"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/mobile/homefoto-dek.jpg, .img/mobile/homefoto-dek@2x.jpg">
+                <source media="(min-width: 768px)" srcset="./img/mobile/photo-city@1x.jpg, ./img/mobile/photo-city@2x">
+              <img class="presentation__images-item" src="./img/mobile/home-foto.jpg" srcset="./img/mobile/home-foto@2.jpg" width="320px" height="260px"
                 alt="Дом.">
+              </picture>
             </div>
             <ul class="presentation__detail container">
               <li class="presentation__detail-item presentation__detail-item--1">
@@ -99,8 +103,12 @@
                   пройти!<br class="presentation__information-space"> Если вы осмелитесь,
                   конечно</p>
               </div>
-              <img class="presentation__image" src="./img/mobile/canyon-foto.jpg" width="320" height="260"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/mobile/canyon-dec@1x.jpg, ./img/mobile/canyon-dec@2x.jpg">
+                <source media="(min-width: 768px)" srcset="./img/mobile/canyon-tab@1x.jpg, .img/mobile/canyon-tab@2x.jpg">
+              <img class="presentation__image" src="./img/mobile/canyon-foto.jpg" srcset="./img/mobile/canyon-foto@2x.jpg"
                 alt="фото каньона.">
+              </picture>
             </div> <!-- Модификация ( картинка меняет свое местоположение) -->
           </li>
 
@@ -148,13 +156,12 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
             width="766" height="560" allowfullscreen
             title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
-            <img class="maps__image" src="./img/mobile/map-mobile.jpg" alt="Карта.">
+          <img class="maps__image" src="./img/mobile/map-mobile.jpg" alt="Карта.">
         </div>
       </section>
     </main>
 
     <footer class="main-footer container">
-      <!-- Иконки сделать фоном в сss-->
       <a class="main-footer__hashtag">#VISITSEDONA</a>
       <ul class="main-footer__social social">
         <li class="social__item">

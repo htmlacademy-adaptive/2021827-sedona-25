@@ -3,21 +3,36 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
-  padding-top: 90px;
+  padding-top: 89px;
   padding-bottom: 85px;
+  background-color: $black;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/background-index@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/mobile/background-index-tablet.jpg");
+    background-image: url("../img/mobile/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
+    background-size: 1200px auto;
     padding-top: 77px;
     padding-bottom: 43px;
     margin-bottom: 47px;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/back-desktop@2.jpg");
+      background-size: 1200px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/back-desktop@2.jpg");
+    }
   }
 }
 

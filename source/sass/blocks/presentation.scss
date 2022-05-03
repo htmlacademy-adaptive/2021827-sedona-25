@@ -562,17 +562,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    width: 67%;
+    width: 100%;
+    display: block;
   }
 }
 
 .presentation__image {
   width: 100%;
   display: block;
-
-  @media (min-width: $tablet-width) {
-    width: 67%;
-  }
 }
 
 .presentation__icon-home::before {
