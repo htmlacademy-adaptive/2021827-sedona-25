@@ -84,7 +84,12 @@
   }
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/mobile/cat-tablet.jpg");
     margin-bottom: 62px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/cat-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
