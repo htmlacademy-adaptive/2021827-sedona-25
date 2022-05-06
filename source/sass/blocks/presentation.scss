@@ -58,28 +58,15 @@
 
 .presentation__wrapper::after {
   content: "";
-  background-image: url("../img/mobile/vector.svg");
+  background-image: url("../img/mobile/into-mob.svg");
   position: absolute;
   height: 37px;
   bottom: -30px;
   left: 0;
-  width: 50%;
+  width: 100%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.presentation__wrapper::before {
-  content: "";
-  background-image: url("../img/mobile/vector-two.svg");
-  position: absolute;
-  height: 37px;
-  background-repeat: no-repeat;
-  width: 50%;
-  left: 158px;
-  bottom: -30px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     display: none;
