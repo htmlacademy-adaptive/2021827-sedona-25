@@ -122,10 +122,15 @@
 
 // No JS
 
-.main-nav--nojs .main-nav--toggle {
+.main-nav--nojs .main-nav__toggle {
   display: none;
 }
 
 .main-nav--nojs .site-list__item {
   display: block;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
 }
