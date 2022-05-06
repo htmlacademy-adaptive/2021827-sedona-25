@@ -11,6 +11,14 @@
   }
 }
 
+.main-nav {
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    z-index: 0;
+  }
+}
+
 .main-nav--opened .main-nav__toggle {
   right: 20px;
   position: absolute;
