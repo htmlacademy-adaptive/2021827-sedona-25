@@ -60,10 +60,10 @@
         <!-- кнопки лайка добавить декортивно в css -->
         <ul class="catalog-card__tourist-areas tourist-areas">
           <li class="tourist-areas__item">
-            <picture>
-              <!-- <source media="(min-width: 768px)" srcset="./img/mobile/photo1-tablet.jpg, ./img/mobile/photo1-tablet@2x.jpg 2x"> -->
-              <source media="(min-width: 768px)" srcset="./img/mobile/photo1-tablet.jpg, ./img/mobile/photo1-tablet@2x.jpg 2x">
             <a class="tourist-areas__link" src="./img/mobile/photo1-catalog.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/mobile/photo1-desktop.jpg, ./img/mobile/photo1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/mobile/photo1-tablet.jpg, ./img/mobile/photo1-tablet@2x.jpg 2x">
               <img class="tourist-areas__big-img  tourist-areas__images-road" src="./img/mobile/photo1-catalog.jpg" srcset="./img/mobile/photo1-catalog@2x.jpg 2x"
                 width="280" height="280" alt="фото дороги.">
             </a>
@@ -88,8 +88,12 @@
           </li>
           <li class="tourist-areas__item tourist-areas__item-2">
             <a class="tourist-areas__link" src="./img/mobile/photo2-catalog.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/mobile/photo2-desktop.jpg, ./img/mobile/photo2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/mobile/photo2-tablet.jpg, ./img/mobile/photo2-tablet@2x.jpg 2x">
               <img class="tourist-areas__images" src="./img/mobile/photo2-catalog.jpg" srcset="./img/mobile/photo2-catalog@2x.jpg 2x" width="280" height="280"
                 alt="фото кактуса.">
+              </picture>
             </a>
             <div class="tourist-areas__wrapper">
               <div class="tourist-areas__wrapper-2">
@@ -111,8 +115,12 @@
           </li>
           <li class="tourist-areas__item tourist-areas__item-2">
             <a class="tourist-areas__link" src="./img/mobile/photo3-catalog.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/mobile/photo3-desktop.jpg, ./img/mobile/photo3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/mobile/photo3-tablet.jpg, ./img/mobile/photo3-tablet@2x.jpg 2x">
               <img class="tourist-areas__images" src="./img/mobile/photo3-catalog.jpg" srcset="./img/mobile/photo3-catalog@2x.jpg 2x" width="280" height="280"
                 alt="лес на фоне.">
+                </picture>
             </a>
             <div class="tourist-areas__wrapper">
               <div class="tourist-areas__wrapper-2">
@@ -134,6 +142,9 @@
           </li>
           <li class="tourist-areas__item tourist-areas__item-2">
             <a class="tourist-areas__link" src="./img/mobile/photo4-catalog.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/mobile/photo4-desktop.jpg, ./img/mobile/photo4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/mobile/photo4-tablet.jpg, ./img/mobile/photo4-tablet@2x.jpg 2x">
               <img class="tourist-areas__images" src="./img/mobile/photo4-catalog.jpg" srcset="./img/mobile/photo4-catalog@2x.jpg 2x" width="280" height="280"
                 alt="Каньон.">
             </a>
@@ -163,7 +174,11 @@
           очередной раз!</p>
         <!-- Видео -->
         <div class="movie-presentation__wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/mobile/video-desktop.jpg, ./img/mobile/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/mobile/video-tablet.jpg, ./img/mobile/video-tablet@2x.jpg 2x">
           <img class="movie-presentation__image" src="./img/mobile/video-catalog.jpg" srcset="./img/mobile/video-catalog@2x.jpg 2x" alt="Видео.">
+          </picture>
           <button class="movie-presentation__play" type="button"></button>
         </div>
       </section>

@@ -94,6 +94,11 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    background-image: url("../img/mobile/cat-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/cat-desktop@2x.jpg");
+    }
   }
 }
 
