@@ -9,6 +9,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 2px;
+  }
 }
 
 .main-nav {

@@ -32,9 +32,8 @@
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: 1200px auto;
-    padding-top: 25px;
+    padding-top: 0;
     height: 518px;
-    margin-bottom: 47px;
     padding-bottom: 0;
 
     @media (min-resolution: 2dppx) {
@@ -199,7 +198,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 61px;
+    padding-top: 5px;
+    width: 500px;
+    height: 500px;
   }
 }
 

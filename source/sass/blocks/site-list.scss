@@ -65,20 +65,29 @@
 
 .site-list {
   @media (min-width: $desktop-width) {
-    width: 1060px;
+    width: 1160px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .site-list__item:nth-child(2) {
+.site-list__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
     margin-right: calc(187 / 768 * 100%);
     margin-left: 3.5%;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 3.5%;
+    margin-right: calc(290 / 1200 * 100%);
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .site-list__item:nth-child(4) {
-    margin-left: 3.4%;
+.site-list__item:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    margin-left: 2.98%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 3.5%;
   }
 }
 

@@ -51,9 +51,9 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 59px;
-    padding-bottom: 45px;
-    padding-left: 358px;
-    padding-right: 359px;
+    padding-bottom: 44px;
+    padding-left: 356px;
+    padding-right: 357px;
   }
 }
 
@@ -89,6 +89,10 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
   }
 }
 
@@ -240,7 +244,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    width: 33.6%;
     padding-left: 53px;
     padding-right: 52px;
     padding-top: 47px;
@@ -388,10 +392,15 @@
 
   @media (min-width: $desktop-width) {
     font-size: 14px;
+    font-weight: normal;
     line-height: 21px;
 
     br {
       display: none;
+    }
+
+    .presentation__transfer {
+      display: block;
     }
   }
 }
