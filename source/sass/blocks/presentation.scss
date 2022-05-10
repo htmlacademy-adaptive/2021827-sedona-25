@@ -11,7 +11,7 @@
   font-style: normal;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   text-transform: uppercase;
   text-align: center;
 
@@ -37,9 +37,10 @@
 }
 
 .presentation__wrapper {
-  padding-top: 32px;
-  padding-bottom: 16px;
+  padding-top: 41px;
+  padding-bottom: 23px;
   position: relative;
+  padding-left: 18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 47px;
@@ -112,7 +113,7 @@
 .presentation__wrapper-list {
   margin: 0 auto;
   border-bottom: 1px solid rgba(214, 214, 214, 1);
-  padding-top: 26px;
+  padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 10px;
   padding-right: 10px;
@@ -204,12 +205,12 @@
 .presentation__detail {
   list-style-type: none;
   margin-bottom: 52px;
-  padding-left: 68px;
+  padding: 0 10px 0 62px;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    padding-left: 68px;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 0;
     width: 100%;
     padding-right: 0;
     margin-bottom: 0;
@@ -220,8 +221,8 @@
   background-color: #81b3d2;
   color: #ffffff;
   text-transform: uppercase;
-  padding-top: 54px;
-  padding-bottom: 40px;
+  padding-top: 62px;
+  padding-bottom: 39px;
   padding-left: 16px;
   padding-right: 22px;
 
@@ -249,10 +250,16 @@
 }
 
 .presentation__container-order {
+  padding-top: 39px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+
   @media (min-width: $tablet-width) {
     order: 2;
     padding-left: 36px;
     padding-right: 36px;
+    padding-top: auto;
+    padding-bottom: auto;
 
     br {
       display: none;
@@ -277,7 +284,7 @@
 //
 
 .presentation__wrapper-blue {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -329,6 +336,37 @@
   text-align: center;
   font-style: normal;
   font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 21px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.presentation__information-blue {
+  text-align: center;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 21px;
   margin: 0 auto;
 
@@ -418,6 +456,7 @@
 
 .presentation__detail-item--1 {
   margin-bottom: 30px;
+  padding-left: 3px;
 
   @media (min-width: $tablet-width) {
     padding-top: 158px;
@@ -453,6 +492,7 @@
   }
 
   margin-bottom: 30px;
+  padding-left: 8px;
 
   @media (min-width: $tablet-width) {
     padding-left: 36px;
@@ -557,10 +597,15 @@
   color: #000000;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    display: block;
   }
 }
 
@@ -570,7 +615,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   display: block;
   align-items: center;
 }
@@ -601,7 +646,7 @@
   height: 37px;
   position: absolute;
   display: block;
-  left: -45px;
+  left: -47px;
   bottom: -4px;
   background-size: 39px;
   background-repeat: no-repeat;
@@ -632,7 +677,7 @@
   height: 35px;
   position: absolute;
   display: block;
-  left: -45px;
+  left: -52px;
   bottom: -4px;
 
   @media (min-width: $tablet-width) {
@@ -661,7 +706,7 @@
   height: 38px;
   position: absolute;
   display: block;
-  left: -45px;
+  left: -40px;
   bottom: -4px;
 
   @media (min-width: $tablet-width) {
