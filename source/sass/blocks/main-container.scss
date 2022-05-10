@@ -15,11 +15,9 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/mobile/back-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: 50% -90px;
-    background-size: 1200px auto;
-    padding-top: 53px;
+    background-size: 100% auto;
+    padding-top: 70px;
     padding-bottom: 43px;
-    margin-bottom: 47px;
     position: relative;
     height: 518px;
 
@@ -36,9 +34,8 @@
     background-size: 1200px auto;
     padding-top: 25px;
     height: 518px;
+    margin-bottom: 47px;
     padding-bottom: 0;
-    margin-bottom: 0;
-
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/back-desktop@2x.jpg");
@@ -59,7 +56,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/mobile/vector-tablet.svg");
-    top: 493px;
+    bottom: -1px;
     background-repeat: no-repeat;
 
     @media (min-width: $desktop-width) {
@@ -197,7 +194,7 @@
     padding-right: 20px;
     margin: 0 auto;
     display: block;
-    width: 461px;
+    width: 505px;
     height: 365px;
   }
 
