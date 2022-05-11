@@ -17,10 +17,12 @@
 .academy {
   display: block;
   align-items: center;
-  text-align: center;
+  padding-left: 76px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-right: 9px;
+    margin-top: 7px;
   }
 }
 

@@ -1,5 +1,5 @@
 .social {
-  margin-bottom: 47px;
+  margin-bottom: 21px;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -7,10 +7,14 @@
   padding: 0;
   margin-top: 0;
   flex-wrap: wrap;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     max-width: 270px;
+    margin-bottom: 0;
+    margin-left: 53px;
+    margin-top: 34px;
   }
 }
 
@@ -30,7 +34,6 @@
 
   &:active {
     background-color: #5496BD;
-
   }
 }
 
@@ -50,8 +53,8 @@
 
 .social__link-icons {
   position: absolute;
-  top: 15px;
-  left: 11px;
+  top: 16px;
+  left: 12px;
 }
 
 .social__link-youtube {
@@ -61,9 +64,9 @@
 }
 
 .social__link-icons:hover path {
-    fill: $white;
-  }
+  fill: $white;
+}
 
 .social__link-icons:active path {
   fill: rgba(255, 255, 255, 0.3);
-  }
+}
