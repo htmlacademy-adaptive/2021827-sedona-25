@@ -13,14 +13,13 @@
   <div class="page__wrapper">
     <header class="main-header">
       <!-- Навигация с картинкой и кнопкой  -->
-      <!-- Кнопку меню добавить фоном в css -->
       <div class="main-header__wrapper">
         <a class="main-header__logo">
           <img src="./img/mobile/header-logo.svg" width="185" height="96" alt=Логотип.>
         </a>
       </div>
       <!-- Список меню  -->
-      <nav class="main-header__main-nav main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-header__main-nav main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -67,14 +66,14 @@
               <div class="presentation__container">
                 <h3 class="presentation__title-blue">Настоящий<br> городок</h3>
                 <span class="presentation__number">— №1 —</span>
-                <p class="presentation__information">Седона — не
-                  аттракцион для<br> туристов, там
+                <p class="presentation__information-blue">Седона не
+                  аттракцион для<br> туристов,<br class="presentation__transfer"> там
                   течёт своя <br>жизнь</p>
               </div>
-              <picture>
+              <picture class="presentation__picture">
                 <source media="(min-width: 1200px)" srcset="./img/mobile/homefoto-dek.jpg 1x, ./img/mobile/homefoto-dek@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/mobile/photo-city.jpg 1x, ./img/mobile/photo-city@2x.jpg 2x">
-              <img class="presentation__images-item" src="./img/mobile/home-foto.jpg" srcset="./img/mobile/home-foto@2x.jpg" alt="Дом.">
+              <img class="presentation__images-item" src="./img/mobile/home-foto.jpg" srcset="./img/mobile/home-foto@2x.jpg" alt="Дом." width="320" height="260">
               </picture>
             </div>
             <ul class="presentation__detail container">
@@ -105,11 +104,11 @@
                   пройти!<br class="presentation__information-space"> Если вы осмелитесь,
                   конечно</p>
               </div>
-              <picture>
+              <picture class="presentation__picture">
                 <source media="(min-width: 1200px)" srcset="./img/mobile/canyon-dec.jpg, ./img/mobile/canyon-dec@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/mobile/canyon-tab.jpg, ./img/mobile/canyon-tab@2x.jpg 2x">
               <img class="presentation__image" src="./img/mobile/canyon-foto.jpg" srcset="./img/mobile/canyon-foto@2x.jpg"
-                alt="фото каньона.">
+                alt="фото каньона." width="320" height="260">
               </picture>
             </div> <!-- Модификация ( картинка меняет свое местоположение) -->
           </li>
@@ -161,7 +160,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/mobile/map-desktop.jpg, ./img/mobile/map-desktop@2x.jpg">
               <source media="(min-width: 768px)" srcset="./img/mobile/map-tablet.jpg, ./img/mobile/map-tablet@2x.jpg">
-          <img class="maps__image" src="./img/mobile/map-mobile.jpg" srcset="./img/mobile/map-mobile@2x.jpg" alt="Карта.">
+          <img class="maps__image" src="./img/mobile/map-mobile.jpg" srcset="./img/mobile/map-mobile@2x.jpg" alt="Карта." width="320" height="350">
         </picture>
         </div>
       </section>
