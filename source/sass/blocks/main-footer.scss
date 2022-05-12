@@ -35,4 +35,8 @@
     min-width: 166px;
     margin-bottom: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
+  }
 }

@@ -25,6 +25,11 @@
     padding-right: 0;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 266px;
+    margin-top: -24px;
+  }
 }
 
 .academy__link-svg:hover path {
