@@ -85,6 +85,10 @@
     padding: 15px 17px 17px 20px;
     margin-left: -12px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
 }
 
 .search-hotel__button-title {

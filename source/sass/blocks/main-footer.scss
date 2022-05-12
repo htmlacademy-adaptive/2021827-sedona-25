@@ -7,9 +7,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: initial;
-    justify-content: space-between;
-    padding-top: 0;
-    padding-bottom: 29px;
+    padding-top: 36px;
+    padding-bottom: 30px;
     align-items: center;
     padding-left: 45px;
     padding-right: 60px;
@@ -34,7 +33,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: 166px;
-    margin-bottom: 0;
-    margin-top: 24px;
+    margin-bottom: 10px;
   }
 }
