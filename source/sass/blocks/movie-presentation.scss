@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 26px;
-    margin-top: 0;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +32,7 @@
 
   @media (min-width: $tablet-width) {
     font: inherit;
-    margin-bottom: 66px;
+    margin-bottom: 89px;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -57,6 +57,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,6 +78,11 @@
   left: 53%;
   bottom: 34%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+    bottom: 44%;
+  }
 }
 
 .movie-presentation__wrapper {

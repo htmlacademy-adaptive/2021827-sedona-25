@@ -87,7 +87,9 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/mobile/cat-tablet.jpg");
-    margin-bottom: 62px;
+    margin-bottom: 59px;
+    padding-top: 85px;
+    padding-left: 32px;
     height: 291px;
     background-size: 100% auto;
     background-position: 100% -50px;
@@ -211,8 +213,8 @@
   padding-top: 33px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 62px;
-    padding-bottom: 58px;
+    padding-top: 0;
+    padding-bottom: 38px;
     padding-left: 60px;
     padding-right: 60px;
     margin: 0;
@@ -231,9 +233,9 @@
   height: 39px;
 
   @media (min-width: $tablet-width) {
-    width: 456px;
+    width: 460px;
     height: 77px;
-    margin-left: 125px;
+    margin-left: 122px;
     margin-top: 10px;
   }
 
