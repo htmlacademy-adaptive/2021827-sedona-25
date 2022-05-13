@@ -429,6 +429,7 @@
   }
 }
 
+
 .presentation__item--1 {
   width: 100%;
 }
@@ -532,6 +533,10 @@
 }
 
 .presentation__detail-item--3 {
+  .presentation__paragraph-3 {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;

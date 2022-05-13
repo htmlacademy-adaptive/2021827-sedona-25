@@ -48,6 +48,7 @@
 
 .tourist-areas__item:nth-child(4) {
   padding-bottom: 0;
+  margin-bottom: 18px;
 }
 
 .tourist-areas__link {
@@ -65,7 +66,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  margin-right: 14px;
+  margin-right: 9px;
 
   @media (min-width: $tablet-width) {
     margin-right: 9px;
@@ -130,7 +131,7 @@
 }
 
 .tourist-areas__wrapper {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     border: none;
