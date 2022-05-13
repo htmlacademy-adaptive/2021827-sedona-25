@@ -1,7 +1,6 @@
 .main-header__wrapper {
   padding: 0 20px;
   display: flex;
-  height: 96px;
 
   @media (min-width: $tablet-width) {
     width: 185px;
@@ -12,6 +11,10 @@
     z-index: 1;
     height: auto;
   }
+}
+
+.main-header__wrapper--nojs {
+  height: 96px;
 }
 
 .main-header__logo {

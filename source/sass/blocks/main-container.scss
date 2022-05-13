@@ -7,6 +7,8 @@
   padding-bottom: 85px;
   background-color: $black;
   position: relative;
+  margin: 0 auto;
+  display: block;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/mobile/background-index@2x.jpg");
