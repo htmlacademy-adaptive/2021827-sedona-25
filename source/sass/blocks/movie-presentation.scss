@@ -30,17 +30,29 @@
   padding-left: 8px;
   padding-right: 6px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font: inherit;
     margin-bottom: 89px;
     padding-left: 100px;
     padding-right: 100px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font: inherit;
     padding-left: 125px;
     padding-right: 125px;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -63,6 +75,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 199px;
     padding-right: 201px;
+    padding-bottom: 82px;
   }
 }
 

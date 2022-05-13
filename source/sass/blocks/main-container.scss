@@ -100,6 +100,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-position: 100% -56px;
+    padding-top: 91px;
+    height: 301px;
     margin-bottom: 0;
     background-image: url("../img/mobile/cat-desktop.jpg");
 
@@ -132,6 +135,13 @@
     left: 0;
     top: 234px;
     position: absolute;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url("../img/mobile/intro-desc.svg");
+    height: 60px;
+    top: 245px;
   }
 }
 
@@ -222,7 +232,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
-    padding-bottom: 62px;
+    padding-bottom: 60px;
     padding-left: 0;
     padding-right: 0;
   }
