@@ -3,9 +3,11 @@
   flex-direction: column;
   padding-top: 32px;
   padding-bottom: 29px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 100%;
     flex-direction: initial;
     padding-top: 36px;
     padding-bottom: 30px;
@@ -34,9 +36,12 @@
   @media (min-width: $tablet-width) {
     min-width: 166px;
     margin-bottom: 10px;
+    width: 25%;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 4px;
+    width: auto;
+    padding-left: 3px;
   }
 }

@@ -10,16 +10,18 @@
   padding-left: 10px;
 
   @media (min-width: $tablet-width) {
+    min-width: 160px;
+    width: 24.5%;
     margin: 0;
     max-width: 270px;
     margin-bottom: 0;
-    margin-left: 97px;
+    margin-left: calc(113 / 768 * 100%);
     margin-top: -2px;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 254px;
+    margin-left: 218px;
     margin-top: 0;
   }
 }

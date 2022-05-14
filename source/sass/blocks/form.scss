@@ -12,6 +12,10 @@
     margin-bottom: 28px;
     padding-left: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 90px;
+  }
 }
 
 .form__naming {
@@ -62,6 +66,10 @@
     line-height: 26px;
     font-weight: 700;
     margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 27px;
   }
 }
 
@@ -182,6 +190,11 @@
     margin: 0;
     width: 324px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 384px;
+    padding-left: 35px;
+  }
 }
 
 .form__comment-button-span {
@@ -225,6 +238,11 @@
     padding-top: 10px;
     font-size: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 6px;
+    padding-top: 5px;
+  }
 }
 
 .form__impression-header {
@@ -243,7 +261,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 49px;
   }
 }
 
@@ -261,6 +279,10 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 54px;
   }
 }
 
@@ -288,8 +310,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 56px;
-    padding-bottom: 83px;
+    margin-top: 71px;
+    padding-bottom: 54px;
   }
 }
 
@@ -306,6 +328,11 @@
     margin: 0;
     padding-bottom: 1px;
     padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-bottom: 71px;
   }
 }
 
@@ -346,7 +373,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 55px;
+    padding-left: 1px;
   }
 }
 
@@ -363,7 +391,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding-left: 45px;
     padding-right: 0;
   }
 }
@@ -426,7 +454,8 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
     padding-left: 120px;
-    padding-right: 63px;
+    padding-right: 87px;
+    width: 51.2%;
   }
 }
 
@@ -441,9 +470,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 64px;
-    padding-right: 178px;
+    padding-left: 25px;
+    padding-right: 120px;
     margin-top: 0;
+    width: 48.8%;
   }
 }
 
@@ -464,11 +494,13 @@
 
 .form__impression-item:last-child {
   margin-bottom: 0;
+  padding-left: 14px;
 }
 
 .form__impression-item:nth-child(2) {
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    padding-left: 8px;
   }
 }
 
@@ -488,6 +520,18 @@
 
 .form__visited-item:last-child {
   margin-bottom: 0;
+}
+
+.form__visited-item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    padding-left: 8px;
+  }
+}
+
+.form__visited-item:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    padding-left: 13px;
+  }
 }
 
 .form__global-wrapper {
@@ -518,7 +562,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 90px;
+    padding-left: 97px;
     padding-right: 90px;
     justify-content: space-between;
   }
