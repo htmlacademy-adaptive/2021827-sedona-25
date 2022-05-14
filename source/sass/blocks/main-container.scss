@@ -150,9 +150,11 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-height: 159px;
-  background-position: center;
+  background-position: 100% -56px;
   padding-bottom: 33px;
   position: relative;
+  padding-left: 45px;
+  padding-top: 52px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/mobile/form-mob@2x.jpg");
@@ -162,6 +164,8 @@
     background-image: url("../img/mobile/form-tablet.jpg");
     min-height: 290px;
     background-position: bottom;
+    padding-left: 157px;
+    padding-top: 95px;
     width: 100%;
 
     @media (min-resolution: 2dppx) {
@@ -183,9 +187,9 @@
   background-image: url("../img/mobile/into-mob.svg");
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 57px;
+  min-height: 63px;
   left: 0;
-  top: 103px;
+  bottom: -6px;
   background-size: 100% auto;
   display: block;
   position: absolute;
@@ -257,20 +261,15 @@
 }
 
 .main-container__form-images {
-  margin-top: 17%;
-  margin-left: 15%;
+  width: 229px;
 
   @media (min-width: $tablet-width) {
     width: 457px;
     height: 78px;
-    margin-top: 12%;
-    margin-left: 20%;
   }
 
   @media (min-width: $desktop-width) {
     width: 460px;
     height: 80px;
-    margin-left: 31%;
-    margin-top: 8%;
   }
 }
