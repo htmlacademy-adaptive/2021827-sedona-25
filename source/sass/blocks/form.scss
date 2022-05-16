@@ -148,6 +148,50 @@
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 28px;
+    position: relative;
+  }
+}
+
+.form__comment-header::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 2px;
+    top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 11px;
+    left: -354px;
+  }
+}
+
+.form__comment-header::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 2px;
+    top: 12px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 11px;
+    right: -356px;
   }
 }
 
@@ -262,10 +306,97 @@
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 32px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 49px;
+  }
+}
+
+.form__impression-header::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-position: center;
+    display: block;
+    background-repeat: no-repeat;
+    width: 123px;
+    height: 1px;
+    top: 12px;
+    left: -186px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 12px;
+    left: -341px;
+  }
+}
+
+.form__impression-header::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 1px;
+    top: 12px;
+    left: 339px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+  }
+}
+
+.form__visited-header::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 1px;
+    top: 26px;
+    left: -159px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 25px;
+    left: -324px;
+  }
+}
+
+.form__visited-header::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 1px;
+    top: 26px;
+    right: -179px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 25px;
+    right: -326px;
   }
 }
 
@@ -374,6 +505,7 @@
     max-width: 310px;
     padding-left: 18px;
     margin-bottom: 25px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
