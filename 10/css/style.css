@@ -13,6 +13,7 @@
   font-display: swap;
 }
 body {
+  min-width: 320px;
   margin: 0 auto;
   height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -226,6 +227,16 @@ body {
     grid-column: 3/4;
     justify-self: end;
     margin-right: 7px;
+  }
+}
+
+.tourist-areas__icons {
+  opacity: 0.3;
+}
+@media (min-width: 1200px) {
+  .tourist-areas__icons {
+    fill: #ffffff;
+    opacity: 1;
   }
 }
 
@@ -1265,7 +1276,7 @@ body {
     background-image: url("../img/mobile/cat-tablet.jpg");
     margin-bottom: 59px;
     padding-top: 85px;
-    padding-left: 32px;
+    padding-left: 0;
     height: 291px;
     background-size: 100% auto;
     background-position: 100% -50px;
@@ -1460,9 +1471,9 @@ body {
 }
 @media (min-width: 1200px) {
   .wrapper-catalog__images {
-    width: 460px;
+    width: 455px;
     height: 80px;
-    margin-left: 336px;
+    margin-left: 373px;
   }
 }
 
@@ -1485,7 +1496,7 @@ body {
 .main-footer {
   display: flex;
   flex-direction: column;
-  padding-top: 32px;
+  padding-top: 37px;
   padding-bottom: 29px;
   align-items: center;
 }
@@ -1505,6 +1516,15 @@ body {
   .main-footer {
     padding-left: 104px;
     padding-right: 120px;
+  }
+}
+
+.main-footer--catalog {
+  padding-top: 25px;
+}
+@media (min-width: 768px) {
+  .main-footer--catalog {
+    padding-top: 37px;
   }
 }
 
@@ -2779,6 +2799,7 @@ body {
 }
 .search-hotel__button:active {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.2);
 }
 .search-hotel__button:disabled {
   background-color: #e5e5e5;
@@ -2812,6 +2833,9 @@ body {
   text-align: center;
   padding-right: 4px;
 }
+.search-hotel__button-title:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .site-list__link {
   display: block;
@@ -2826,6 +2850,10 @@ body {
 }
 .site-list__link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+.site-list__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #669ec0;
 }
 @media (min-width: 768px) {
   .site-list__link {
@@ -2942,6 +2970,12 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .social-catalog {
+    margin-left: 216px;
+  }
+}
+
 .social__item {
   text-decoration: none;
   list-style-type: none;
@@ -2963,18 +2997,32 @@ body {
   display: block;
   width: 48px;
   height: 48px;
+  fill: #ffffff;
 }
 .social__link:hover {
   background-color: #669ec0;
+  fill: white;
 }
 .social__link:active {
   background-color: #5496bd;
+  fill: rgba(255, 255, 255, 0.3);
+}
+.social__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #669ec0;
 }
 
 .social__link-icons {
   position: absolute;
   top: 16px;
   left: 12px;
+  fill: #ffffff;
+}
+.social__link-icons:hover {
+  fill: #ffffff;
+}
+.social__link-icons:active {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .social__link-youtube {
@@ -2983,20 +3031,13 @@ body {
   left: 14px;
 }
 
-.social__link-icons:hover path {
-  fill: #ffffff;
-}
-
-.social__link-icons:active path {
-  fill: rgba(255, 255, 255, 0.3);
-}
-
 .academy__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-right: 8px;
 }
 .academy__text:hover {
   color: #81b3d2;
@@ -3008,10 +3049,12 @@ body {
 .academy {
   display: block;
   align-items: center;
+  padding-top: 20px;
+  padding-right: 31px;
 }
 @media (min-width: 768px) {
   .academy {
-    margin-left: 16.1458333333%;
+    margin-left: 16.40625%;
     margin-top: -27px;
     padding-right: 0;
     padding-left: 0;
@@ -3024,16 +3067,36 @@ body {
   }
 }
 
-.academy__link-svg[href]:hover {
+.academy__link {
+  position: relative;
+  list-style-type: none;
+  text-decoration: none;
+  color: #000000;
+}
+.academy__link:hover {
   fill: #81b3d2;
+  color: #81b3d2;
+}
+.academy__link:active {
+  fill: #b3b3b3;
+  color: #b3b3b3;
+}
+.academy__link:focus-visible {
+  box-shadow: 0 0 0 3px #669ec0;
+  outline: none;
+}
+
+.academy__link-svg {
+  position: absolute;
+  right: -31px;
+  bottom: -9px;
 }
 
 .academy__link-svg:hover {
   fill: #81b3d2;
-  opacity: 0.3;
 }
 
-.academy__link-svg:active path {
+.academy__link-svg:active {
   fill: #b3b3b3;
 }
 
