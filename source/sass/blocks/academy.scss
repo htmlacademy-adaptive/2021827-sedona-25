@@ -4,6 +4,7 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-right: 8px;
 
   &:hover {
     color: rgba(129, 179, 210, 1);
@@ -17,9 +18,11 @@
 .academy {
   display: block;
   align-items: center;
+  padding-top: 20px;
+  padding-right: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-left: calc(124 / 768 * 100%);
+    margin-left: calc(126 / 768 * 100%);
     margin-top: -27px;
     padding-right: 0;
     padding-left: 0;
@@ -31,15 +34,38 @@
   }
 }
 
-.academy__link-svg[href]:hover {
-  fill: rgba(129, 179, 210, 1);
+.academy__link {
+  position: relative;
+  list-style-type: none;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    fill: rgba(129, 179, 210, 1);
+    color: rgba(129, 179, 210, 1);
+  }
+
+  &:active {
+    fill: rgba(179, 179, 179, 1);
+    color: rgba(179, 179, 179, 1);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px #669ec0;
+    outline: none;
+  }
+}
+
+.academy__link-svg {
+  position: absolute;
+  right: -31px;
+  bottom: -9px;
 }
 
 .academy__link-svg:hover {
   fill: rgba(129, 179, 210, 1);
-  opacity: 0.3;
 }
 
-.academy__link-svg:active path {
+.academy__link-svg:active {
   fill: rgba(179, 179, 179, 1);
 }

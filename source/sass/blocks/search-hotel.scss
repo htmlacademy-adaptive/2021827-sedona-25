@@ -71,6 +71,7 @@
 
   &:active {
     background-color: rgba(84, 150, 189, 1);
+    color: rgba(255, 255, 255, 0.2);
   }
 
   &:disabled {
@@ -104,4 +105,8 @@
   line-height: 26px;
   text-align: center;
   padding-right: 4px;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

@@ -13,6 +13,11 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #669ec0;
+  }
+
   @media (min-width: $tablet-width) {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
