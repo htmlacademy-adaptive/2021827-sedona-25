@@ -83,6 +83,15 @@
   }
 }
 
+.tourist-areas__icons {
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    fill: $white;
+    opacity: 1;
+  }
+}
+
 .tourist-areas__wrapper-1 {
   padding-bottom: 25px;
 

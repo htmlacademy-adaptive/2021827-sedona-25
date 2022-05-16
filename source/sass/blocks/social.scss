@@ -26,6 +26,12 @@
   }
 }
 
+.social-catalog {
+  @media (min-width: $desktop-width) {
+    margin-left: 216px;
+  }
+}
+
 .social__item {
   text-decoration: none;
   list-style-type: none;

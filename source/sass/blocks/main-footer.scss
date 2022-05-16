@@ -22,6 +22,14 @@
   }
 }
 
+.main-footer--catalog {
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+  }
+}
+
 .main-footer__hashtag {
   color: #000000;
   font-weight: 700;
