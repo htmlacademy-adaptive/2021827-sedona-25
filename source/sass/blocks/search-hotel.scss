@@ -64,6 +64,7 @@
   padding: 16px 20px;
   text-align: center;
   margin: 0 auto;
+  color: $white;
 
   &:hover {
     background-color: rgba(102, 158, 192, 1);
@@ -72,10 +73,6 @@
   &:active {
     background-color: rgba(84, 150, 189, 1);
     color: rgba(255, 255, 255, 0.2);
-  }
-
-  &:disabled {
-    background-color: rgba(229, 229, 229, 1);
   }
 
   &:focus-visible {
@@ -96,17 +93,16 @@
   }
 }
 
+.search-hotel__button--disabled {
+  background-color: rgba(229, 229, 229, 1);
+}
+
 .search-hotel__button-title {
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   padding-right: 4px;
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
 }

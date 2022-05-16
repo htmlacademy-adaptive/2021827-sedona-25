@@ -30,6 +30,18 @@
   }
 }
 
+.main-footer--form {
+  padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+  }
+}
+
 .main-footer__hashtag {
   color: #000000;
   font-weight: 700;

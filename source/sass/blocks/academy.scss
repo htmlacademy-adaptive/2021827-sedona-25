@@ -41,12 +41,10 @@
   color: $black;
 
   &:hover {
-    fill: rgba(129, 179, 210, 1);
     color: rgba(129, 179, 210, 1);
   }
 
   &:active {
-    fill: rgba(179, 179, 179, 1);
     color: rgba(179, 179, 179, 1);
   }
 
@@ -62,10 +60,10 @@
   bottom: -9px;
 }
 
-.academy__link-svg:hover {
+.academy__link:hover svg {
   fill: rgba(129, 179, 210, 1);
 }
 
-.academy__link-svg:active {
+.academy__link:active svg {
   fill: rgba(179, 179, 179, 1);
 }
