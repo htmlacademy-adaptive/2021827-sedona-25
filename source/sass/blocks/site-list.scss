@@ -13,6 +13,11 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #669ec0;
+  }
+
   @media (min-width: $tablet-width) {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
@@ -83,7 +88,7 @@
 
 .site-list__item:nth-child(4) {
   @media (min-width: $tablet-width) {
-    margin-left: 2.98%;
+    margin-left: 3.4%;
   }
 
   @media (min-width: $desktop-width) {

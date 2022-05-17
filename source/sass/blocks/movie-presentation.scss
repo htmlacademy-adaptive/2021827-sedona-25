@@ -4,13 +4,13 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 26px;
-    margin-top: 0;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,17 +30,29 @@
   padding-left: 8px;
   padding-right: 6px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font: inherit;
-    margin-bottom: 66px;
+    margin-bottom: 89px;
     padding-left: 100px;
     padding-right: 100px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font: inherit;
     padding-left: 125px;
     padding-right: 125px;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -57,11 +69,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 199px;
     padding-right: 201px;
+    padding-bottom: 82px;
   }
 }
 
@@ -74,9 +88,14 @@
   border: none;
   background-color: transparent;
   position: absolute;
-  left: 50%;
-  bottom: 50%;
+  left: 53%;
+  bottom: 34%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+    bottom: 44%;
+  }
 }
 
 .movie-presentation__wrapper {

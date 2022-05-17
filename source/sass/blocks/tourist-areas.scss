@@ -48,6 +48,11 @@
 
 .tourist-areas__item:nth-child(4) {
   padding-bottom: 0;
+  margin-bottom: 18px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .tourist-areas__link {
@@ -65,15 +70,25 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  margin-right: 14px;
+  margin-right: 4px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 9px;
+    margin-right: 5px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
     justify-self: end;
+    margin-right: 7px;
+  }
+}
+
+.tourist-areas__icons {
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    fill: $white;
+    opacity: 1;
   }
 }
 
@@ -95,7 +110,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     color: $white;
     position: absolute;
-    bottom: 3px;
+    bottom: 0;
     width: 100%;
     display: grid;
     grid-template-columns: 90% 10%;
@@ -118,10 +133,10 @@
 
 .tourist-areas__wrapper-3 {
   @media (min-width: $tablet-width) {
-    padding-top: 32px;
-    padding-bottom: 21px;
-    padding-right: 20px;
-    padding-left: 40%;
+    padding-top: 26px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 0%;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,22 +144,37 @@
   }
 }
 
+.tourist-areas__wrapper-big {
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
+    padding-top: 27px;
+  }
+}
+
+.toursit-areas__wrapper--3 {
+  padding-left: 7px;
+}
+
 .tourist-areas__wrapper {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     border: none;
     background-color: rgba(242, 242, 242, 1);
     padding-bottom: 0;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 77% 23%;
   }
 
   @media (min-width: $desktop-width) {
     background-color: rgba(0, 0, 0, 0.3);
     color: $white;
     position: absolute;
-    bottom: 3px;
+    bottom: 0;
     display: grid;
     width: 100%;
     grid-template-columns: 80% 20%;

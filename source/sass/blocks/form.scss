@@ -10,6 +10,11 @@
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 28px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 90px;
   }
 }
 
@@ -42,6 +47,10 @@
     background-color: $white;
     box-shadow: 0 0 0 4px rgba(229, 229, 229, 1);
   }
+
+  @media (min-width: $tablet-width) {
+    width: 106%;
+  }
 }
 
 .form__contacts-title {
@@ -51,11 +60,26 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 27px;
+  }
 }
 
 .form__contacts-naming {
   text-transform: uppercase;
   padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 55px;
+  }
 }
 
 .form__contacts-name {
@@ -99,8 +123,16 @@
 }
 
 .form__contacts-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+  }
+}
+
+.form__contacts-wrapper--2 {
+  margin-bottom: 35px;
 }
 
 .form__comment-header {
@@ -109,13 +141,57 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 28px;
+    position: relative;
+  }
+}
+
+.form__comment-header::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 2px;
+    top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 11px;
+    left: -354px;
+  }
+}
+
+.form__comment-header::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 2px;
+    top: 12px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 11px;
+    right: -356px;
   }
 }
 
@@ -123,7 +199,8 @@
   background-color: rgba(242, 242, 242, 1);
   border: none;
   min-width: 279px;
-  min-height: 150px;
+  height: 150px;
+  font: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -133,6 +210,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    height: 160px;
   }
 
   @media (min-width: $desktop-width) {
@@ -145,6 +223,8 @@
   border: none;
   margin: 0 auto;
   display: block;
+  width: 281px;
+  margin-bottom: 3px;
 
   &:hover {
     background-color: rgba(102, 158, 192, 1);
@@ -156,11 +236,18 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 384px;
+    padding-left: 35px;
   }
 }
 
 .form__comment-button-span {
   font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 281px;
   font-size: 21px;
   line-height: 26px;
@@ -168,15 +255,24 @@
   align-items: center;
   color: rgba(255, 255, 255, 1);
   display: block;
-  padding: 18px 34px 13px 32px;
+  padding: 17px 34px 13px 19px;
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 13px;
+    padding-right: 15px;
+    padding-left: 34px;
   }
 }
 
 .form__comment-mark {
   line-height: 21px;
+  font-size: 12px;
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;
   display: flex;
@@ -187,6 +283,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 6px;
+    padding-top: 5px;
   }
 }
 
@@ -196,17 +299,104 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     max-width: 400px;
     font-size: 21px;
     line-height: 26px;
-    margin-bottom: 38px;
+    margin-bottom: 32px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 49px;
+  }
+}
+
+.form__impression-header::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-position: center;
+    display: block;
+    background-repeat: no-repeat;
+    width: 123px;
+    height: 1px;
+    top: 12px;
+    left: -186px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 12px;
+    left: -341px;
+  }
+}
+
+.form__impression-header::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 1px;
+    top: 12px;
+    left: 339px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+  }
+}
+
+.form__visited-header::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 1px;
+    top: 26px;
+    left: -159px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 25px;
+    left: -324px;
+  }
+}
+
+.form__visited-header::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/mobile/layer1-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 123px;
+    height: 1px;
+    top: 26px;
+    right: -179px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    background-repeat: repeat;
+    top: 25px;
+    right: -326px;
   }
 }
 
@@ -223,7 +413,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 50px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 54px;
   }
 }
 
@@ -237,22 +431,22 @@
   margin-top: 24px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
   padding-top: 0;
   padding-right: 20px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding-bottom: 55px;
-    margin-top: 48px;
+    padding-bottom: 50px;
+    margin-top: 63px;
     padding-left: 0;
     padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 56px;
-    padding-bottom: 83px;
+    margin-top: 71px;
+    padding-bottom: 54px;
   }
 }
 
@@ -261,17 +455,19 @@
   border: none;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 24px;
-  padding-left: 20px;
+  padding-left: 18px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     margin: 0;
-    padding-bottom: 52px;
+    padding-bottom: 1px;
+    padding-left: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 97px;
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-bottom: 71px;
   }
 }
 
@@ -301,16 +497,20 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
     max-width: 310px;
+    padding-left: 18px;
+    margin-bottom: 25px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 55px;
+    padding-left: 1px;
   }
 }
 
@@ -323,11 +523,11 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 84px;
-    padding-right: 110px;
+    padding-right: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding-left: 45px;
     padding-right: 0;
   }
 }
@@ -379,7 +579,7 @@
 
 .form__info {
   width: 100%;
-  padding-bottom: 39px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -390,7 +590,8 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
     padding-left: 120px;
-    padding-right: 63px;
+    padding-right: 87px;
+    width: 51.2%;
   }
 }
 
@@ -401,23 +602,25 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     margin-top: 0;
+    padding-left: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 64px;
-    padding-right: 178px;
+    padding-left: 25px;
+    padding-right: 120px;
     margin-top: 0;
+    width: 48.8%;
   }
 }
 
 .form__impression-item {
-  margin-bottom: 16px;
+  margin-bottom: 22px;
   position: relative;
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
-    margin-bottom: 36px;
+    width: 48.3%;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -427,16 +630,21 @@
 
 .form__impression-item:last-child {
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 14px;
+  }
 }
 
 .form__impression-item:nth-child(2) {
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    padding-left: 8px;
   }
 }
 
 .form__visited-item {
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -451,6 +659,18 @@
 
 .form__visited-item:last-child {
   margin-bottom: 0;
+}
+
+.form__visited-item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    padding-left: 8px;
+  }
+}
+
+.form__visited-item:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    padding-left: 13px;
+  }
 }
 
 .form__global-wrapper {
@@ -481,7 +701,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 90px;
+    padding-left: 97px;
     padding-right: 90px;
     justify-content: space-between;
   }
@@ -493,7 +713,7 @@
   height: 40px;
   background-color: rgba(242, 242, 242, 1);
   position: relative;
-  margin-right: 16px;
+  margin-right: 20px;
 
   &:hover {
     background-color: rgba(229, 229, 229, 1);

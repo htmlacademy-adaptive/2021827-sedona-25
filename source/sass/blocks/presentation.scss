@@ -11,7 +11,7 @@
   font-style: normal;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 36px;
   text-transform: uppercase;
   text-align: center;
 
@@ -37,10 +37,10 @@
 }
 
 .presentation__wrapper {
-  padding-top: 41px;
+  padding-top: 34px;
   padding-bottom: 23px;
   position: relative;
-  padding-left: 18px;
+  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
     padding-top: 47px;
@@ -89,10 +89,6 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 2px;
   }
 }
 
@@ -244,7 +240,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 33.6%;
+    width: 33.5%;
     padding-left: 53px;
     padding-right: 52px;
     padding-top: 47px;
@@ -272,6 +268,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 79px;
     padding-right: 78px;
+    padding-top: 50px;
 
     br {
       display: block;
@@ -364,7 +361,7 @@
     line-height: 21px;
 
     br {
-      display: none;
+      display: block;
     }
   }
 }
@@ -432,6 +429,7 @@
   }
 }
 
+
 .presentation__item--1 {
   width: 100%;
 }
@@ -493,6 +491,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 58px;
     padding-right: 58px;
+    padding-bottom: 80px;
   }
 }
 
@@ -534,6 +533,10 @@
 }
 
 .presentation__detail-item--3 {
+  .presentation__paragraph-3 {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
@@ -553,6 +556,10 @@
 
     br {
       display: none;
+    }
+
+    .presentation__paragraph-3 {
+      display: block;
     }
   }
 }
@@ -642,6 +649,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .presentation__images-item {
@@ -686,8 +697,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 50%;
-    bottom: 46px;
+    left: 49%;
+    bottom: 53px;
   }
 }
 
@@ -715,8 +726,8 @@
 
 
   @media (min-width: $desktop-width) {
-    left: 50%;
-    bottom: 46px;
+    left: 49%;
+    bottom: 53px;
   }
 }
 
@@ -743,8 +754,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 50%;
-    bottom: 40px;
+    left: 49%;
+    bottom: 51px;
   }
 }
 

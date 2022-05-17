@@ -5,7 +5,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-weight: 700;
@@ -14,17 +14,17 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -34,7 +34,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -60,14 +60,14 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    margin-bottom: 63px;
+    margin-bottom: 87px;
     border: none;
     padding-right: 90px;
     padding-left: 90px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 65px;
+    padding-bottom: 24px;
     margin-bottom: 0;
     padding-left: 365px;
     padding-right: 365px;

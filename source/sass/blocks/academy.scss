@@ -4,6 +4,7 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-right: 8px;
 
   &:hover {
     color: rgba(129, 179, 210, 1);
@@ -17,19 +18,62 @@
 .academy {
   display: block;
   align-items: center;
-  padding-left: 76px;
+  padding-top: 20px;
+  padding-right: 31px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding-right: 9px;
-    margin-top: 7px;
+    margin-left: calc(126 / 768 * 100%);
+    margin-top: -27px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 227px;
+    margin-top: -25px;
   }
 }
 
-.academy__link-svg:hover path {
+.main-footer__academy--form {
+  @media (min-width: $tablet-width) {
+    margin-left: calc(128 / 768 * 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: calc(280 / 1200 * 100%);
+  }
+}
+
+.academy__link {
+  position: relative;
+  list-style-type: none;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    color: rgba(129, 179, 210, 1);
+  }
+
+  &:active {
+    color: rgba(179, 179, 179, 1);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px #669ec0;
+    outline: none;
+  }
+}
+
+.academy__link-svg {
+  position: absolute;
+  right: -31px;
+  bottom: -9px;
+}
+
+.academy__link:hover svg {
   fill: rgba(129, 179, 210, 1);
 }
 
-.academy__link-svg:active path {
+.academy__link:active svg {
   fill: rgba(179, 179, 179, 1);
 }

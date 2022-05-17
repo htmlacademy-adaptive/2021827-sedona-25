@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 61px;
+    padding-top: 58px;
     padding-bottom: 66px;
   }
 }
@@ -49,6 +49,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .search-hotel__button {
@@ -60,6 +64,7 @@
   padding: 16px 20px;
   text-align: center;
   margin: 0 auto;
+  color: $white;
 
   &:hover {
     background-color: rgba(102, 158, 192, 1);
@@ -67,10 +72,7 @@
 
   &:active {
     background-color: rgba(84, 150, 189, 1);
-  }
-
-  &:disabled {
-    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 0.2);
   }
 
   &:focus-visible {
@@ -83,13 +85,20 @@
     margin: 0 auto;
     display: block;
     padding: 15px 17px 17px 20px;
-    margin-left: -12px;
+    margin-left: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.search-hotel__button--disabled {
+  background-color: rgba(229, 229, 229, 1);
 }
 
 .search-hotel__button-title {
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;

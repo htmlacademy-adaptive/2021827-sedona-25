@@ -10,11 +10,31 @@
   padding-left: 10px;
 
   @media (min-width: $tablet-width) {
+    min-width: 160px;
+    width: 24.5%;
     margin: 0;
     max-width: 270px;
     margin-bottom: 0;
-    margin-left: 53px;
-    margin-top: 34px;
+    margin-left: calc(110 / 768 * 100%);
+    margin-top: -2px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 218px;
+    margin-top: 0;
+  }
+}
+
+.social-catalog {
+  @media (min-width: $desktop-width) {
+    margin-left: 216px;
+  }
+}
+
+.social-form {
+  @media (min-width: $desktop-width) {
+    margin-left: 215px;
   }
 }
 
@@ -29,11 +49,11 @@
   margin-bottom: 6px;
 
   &:hover {
-    background-color: #669EC0;
+    background-color: rgba(102, 158, 192, 1);
   }
 
   &:active {
-    background-color: #5496BD;
+    background-color: rgba(84, 150, 189, 1);
   }
 }
 
@@ -41,13 +61,19 @@
   display: block;
   width: 48px;
   height: 48px;
+  fill: $white;
 
   &:hover {
-    background-color: #669EC0;
+    background-color: rgba(102, 158, 192, 1);
   }
 
   &:active {
-    background-color: #5496BD;
+    background-color: rgba(84, 150, 189, 1);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px #669ec0;
   }
 }
 
@@ -55,6 +81,7 @@
   position: absolute;
   top: 16px;
   left: 12px;
+  fill: $white;
 }
 
 .social__link-youtube {
@@ -63,10 +90,10 @@
   left: 14px;
 }
 
-.social__link-icons:hover path {
-  fill: $white;
+.social__link:active svg {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
-.social__link-icons:active path {
-  fill: rgba(255, 255, 255, 0.3);
+.social__link:hover svg {
+  fill: $white;
 }
