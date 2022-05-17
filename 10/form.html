@@ -169,10 +169,10 @@
   </div>
   </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer main-footer--form">
     <!-- Иконки сделать фоном в сss-->
     <a class="main-footer__hashtag">#VISITSEDONA</a>
-    <ul class="main-footer__social social">
+    <ul class="main-footer__social social social-form">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           <svg class="social__link-icons" width="24" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -204,10 +204,11 @@
         </a>
       </li>
     </ul>
-    <div class="main-footer__academy academy">
-      <b class="academy__text">Разработано</b>
+    <div class="main-footer__academy main-footer__academy--form academy">
       <a class="academy__link" href="https://htmlacademy.ru">
-        <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <b class="academy__text">Разработано</b>
+        <svg class="academy__link-svg" width="27" height="35" viewBox="0 0 27 35" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
             fill="#000" />
@@ -216,6 +217,43 @@
     </div>
   </footer>
   </div>
+
+<div class="modal__failure modal__failure--close">
+  <div class="modal__wrapper">
+    <h2 class="modal__header">
+      Что-то пошло<br> не так!
+    </h2>
+    <p class="modal__intro">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <!-- Кнопка -->
+      <button class="modal__close-button">
+        <span class="modal__close-title">ок</span>
+      </button>
+  </div>
+</div>
+
+<div class="modal__success modal__success--close">
+  <div class="modal__success-wrapper">
+    <h2 class="modal__success-header">
+      Ваш отзыв отправлен!
+    </h2>
+    <p class="modal__success-intro">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> в ближайшее время мы опубликуем его на сайте.
+    </p>
+    <!-- кнопка -->
+    <button class="modal__success-button">
+   <span class="modal__success-title">
+     Закрыть окно
+   </span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
 
   <script src="./js/script.js"></script>
 </body>
