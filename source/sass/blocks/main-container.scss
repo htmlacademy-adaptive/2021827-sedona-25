@@ -122,7 +122,7 @@
   height: 57px;
   left: 0;
   bottom: -1px;
-  background-size: 100% auto;
+  background-size: 100%;
 
   @media (min-width: $tablet-width) {
     content: "";
@@ -192,17 +192,17 @@
   background-image: url("../img/mobile/into-mob.svg");
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 63px;
+  min-height: 57px;
   left: 0;
-  bottom: -6px;
-  background-size: 100% auto;
+  bottom: 0;
+  background-size: 100% 100%;
   display: block;
   position: absolute;
 
   @media (min-width: $tablet-width) {
     content: "";
     background-image: url("../img/mobile/intro-form.svg");
-    top: 234px;
+    bottom: -7px;
     background-size: 100% auto;
   }
 

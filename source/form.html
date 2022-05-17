@@ -35,7 +35,7 @@
             <a class="site-list__link" href="catalog.html">Фото и Видео</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__item--current" href="form.html">Форма отзыва</a>
+            <a class="site-list__link site-list__link--current" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">html Academy</a>
@@ -221,37 +221,36 @@
   </footer>
   </div>
 
-<div class="modal__failure modal__failure--close">
-  <div class="modal__wrapper">
-    <h2 class="modal__header">
-      Что-то пошло<br> не так!
-    </h2>
-    <p class="modal__intro">
-      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-    </p>
-    <!-- Кнопка -->
-      <button class="modal__close-button">
-        <span class="modal__close-title">ок</span>
+  <div class="page__body-failure page__body-failure--close failure">
+    <div class="failure__wrapper">
+      <h2 class="failure__header">
+        Что-то пошло<br> не так!
+      </h2>
+      <p class="failure__intro">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="failure__close-button">
+        <span class="failure__close-title">ок</span>
       </button>
+    </div>
   </div>
-</div>
 
-<div class="modal__success modal__success--close">
-  <div class="modal__success-wrapper">
-    <h2 class="modal__success-header">
-      Ваш отзыв отправлен!
-    </h2>
-    <p class="modal__success-intro">
-      Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> в ближайшее время мы опубликуем его на сайте.
-    </p>
-    <!-- кнопка -->
-    <button class="modal__success-button">
-   <span class="modal__success-title">
-     Закрыть окно
-   </span>
-    </button>
+  <div class="page__body-success success page__body-success--close">
+    <div class="success__wrapper">
+      <h2 class="success__header">
+        Ваш отзыв отправлен!
+      </h2>
+      <p class="success__intro">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> в ближайшее время мы опубликуем его на сайте.
+      </p>
+      <!-- кнопка -->
+      <button class="success__button">
+        <span class="success__title">
+          Закрыть окно
+        </span>
+      </button>
+    </div>
   </div>
-</div>
 
   <script src="./js/script.js"></script>
 </body>
