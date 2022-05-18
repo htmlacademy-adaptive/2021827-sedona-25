@@ -46,6 +46,7 @@
   },
   "type": "module",
   "dependencies": {
+    "del": "^6.1.0",
     "gulp-svgmin": "^4.1.0",
     "gulp-terser": "^2.1.0"
   }
