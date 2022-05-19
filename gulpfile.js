@@ -120,14 +120,14 @@ const server = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script/js', gulp.series(script))
-  gulp.watch('source/*html', gulp.series(html, reload));
-  //gulp.watch('source/*.html').on('change', browser.reload);//
+  // gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('source/*.html').on('change', browser.reload);
 }
 
 
-export default gulp.series(
-  html, styles, server, watcher
-);
+// export default gulp.series(
+//   html, styles, svg, sprite, script, createWebp, server, watcher
+// );
 
 // Build
 
@@ -144,3 +144,22 @@ export const build = gulp.series(
     createWebp
     ),
 );
+
+// Default
+
+export default gulp.series(
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    script,
+    svg,
+    sprite,
+    createWebp
+    ),
+    gulp.series(
+      server,
+      watcher
+));
