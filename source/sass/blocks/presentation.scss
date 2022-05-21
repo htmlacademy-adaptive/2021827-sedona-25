@@ -657,6 +657,7 @@
 
 .presentation__images-item {
   width: 100%;
+  background-color: rgba(194, 188, 189, 1);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -668,6 +669,7 @@
 .presentation__image {
   width: 100%;
   display: block;
+  background-image: rgba(194, 188, 189, 1);
 
   @media (min-width: $tablet-width) {
     height: 256px;
