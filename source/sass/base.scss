@@ -22,3 +22,11 @@ body {
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
   background-color: rgba(255, 255, 255, 1);
 }
+
+.page__body-failure--close {
+  display: none;
+}
+
+.page__body-success--close {
+  display: none;
+}
