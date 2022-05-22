@@ -31,7 +31,7 @@
     </header>
     <main class="main-container">
       <div class="main-container__wrapper-form"><img class="main-container__form-images"
-          src="./img/mobile/sedona-catalog.svg" width="229" height="39px" alt="Sedona."></div>
+          src="./img/mobile/sedona-catalog.svg" width="229" height="39" alt="Sedona."></div>
       <section class="main-container__feedback feedback container">
         <h1 class="feedback__slogan">Оставьте свой отзыв</h1>
         <p class="feedback__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
@@ -44,22 +44,24 @@
             <legend class="form__title">Представьтесь:</legend>
             <div class="form__wrapper"><label class="form__naming" for="auth-record">ИМЯ*:</label> <input
                 class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Пётр"></div>
-            <div class="form__wrapper"><label class="form__naming" for="auth-record">ФАМИЛИЯ*:</label> <input
-                class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Пустота"></div>
-            <div class="form__wrapper"><label class="form__naming" for="auth-record">Отчество:</label> <input
-                class="form__name" type="text" id="auth-record" name="auth-record" required placeholder="Викторович">
+            <div class="form__wrapper">
+              <label class="form__naming" for="auth-family">ФАМИЛИЯ*:</label>
+              <input class="form__name" type="text" id="auth-family" name="auth-record" required placeholder="Пустота">
+            </div>
+            <div class="form__wrapper"><label class="form__naming" for="auth-name">Отчество:</label> <input
+                class="form__name" type="text" id="auth-name" name="auth-record" required placeholder="Викторович">
             </div>
           </fieldset>
           <fieldset class="form__contacts">
             <legend class="form__contacts-title">Контактная информация:</legend><label class="form__contacts-naming"
-              for="auth-record">Контактный телефон*:</label>
-            <div class="form__contacts-wrapper"><input class="form__contacts-name" type="text" id="auth-record"
+              for="auth-contacts">Контактный телефон*:</label>
+            <div class="form__contacts-wrapper"><input class="form__contacts-name" type="text" id="auth-contacts"
                 name="auth-record" required placeholder="Введите телефон"> <span class="form__contacts-button"></span>
             </div>
-            <div class="form__contacts-wrapper-mail"><label class="form__contacts-naming" for="auth-record">Электронная
+            <div class="form__contacts-wrapper-mail"><label class="form__contacts-naming" for="auth-mail">Электронная
                 почта*:</label>
               <div class="form__contacts-wrapper form__contacts-wrapper--2"><input class="form__contacts-name"
-                  type="text" id="auth-record" name="auth-record" required placeholder="Введите e-mail"> <span
+                  type="text" id="auth-mail" name="mail" required placeholder="Введите e-mail"> <span
                   class="form__contacts-button-2"></span></div>
             </div>
           </fieldset>
@@ -109,7 +111,6 @@
             <div class="form__button-wrapper"><button class="form__comment-button" type="submit"><span
                   class="form__comment-button-span">отправить отзыв</span></button> <span class="form__comment-mark">* —
                 обязательные поля</span>
-              <form class="form__comment-form" action="https://echo.htmlacademy.ru/" method="post"></form>
             </div>
           </div>
         </form>
