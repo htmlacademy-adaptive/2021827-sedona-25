@@ -43,12 +43,17 @@
     background-color: rgba(229, 229, 229, 1);
   }
 
-  &:active {
+  &:focus {
     background-color: $white;
-    box-shadow: 0 0 0 4px rgba(229, 229, 229, 1);
+    border: 4px solid rgba(229, 229, 229, 1);
+    padding-left: 12px;
   }
 
   @media (min-width: $tablet-width) {
+    width: 92%;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 106%;
   }
 }
@@ -102,9 +107,12 @@
     background-color: rgba(229, 229, 229, 1);
   }
 
-  &:active {
+  &:focus {
     background-color: $white;
-    box-shadow: 0 0 0 4px rgba(229, 229, 229, 1);
+    // box-shadow: 0 0 0 4px rgba(229, 229, 229, 1);
+    box-sizing: border-box;
+    border: 4px solid #e5e5e5;
+    padding-left: 12px;
   }
 }
 
@@ -208,6 +216,11 @@
   padding: 16px;
   resize: none;
 
+  &:focus-visible {
+    box-shadow: 0 0 0 2px #669ec0;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 160px;
@@ -225,6 +238,7 @@
   display: block;
   width: 281px;
   margin-bottom: 3px;
+  color: $white;
 
   &:hover {
     background-color: rgba(102, 158, 192, 1);
@@ -232,6 +246,12 @@
 
   &:active {
     background-color: rgba(84, 150, 189, 1);
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px #6fc0f1;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -253,13 +273,8 @@
   line-height: 26px;
   text-transform: uppercase;
   align-items: center;
-  color: rgba(255, 255, 255, 1);
   display: block;
   padding: 17px 34px 13px 19px;
-
-  &:active {
-    opacity: 0.3;
-  }
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -723,6 +738,11 @@
     background-color: rgba(213, 213, 213, 1);
   }
 
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #669ec0;
+  }
+
   @media (min-width: $tablet-width) {
     border-radius: 50%;
     width: 40px;
@@ -745,6 +765,14 @@
     background-color: rgba(51, 51, 51, 0.3);
     opacity: 0.3;
   }
+}
+
+.form__impression-input:focus-visible + .form__impression-mark {
+  box-shadow: 0 0 0 3px #68a2ca;
+}
+
+.form__visited-input:focus-visible + .form__visited-mark {
+  box-shadow: 0 0 0 3px #68a2ca;
 }
 
 .form__visited-mark {
@@ -792,6 +820,14 @@
 
 .form__wrapper {
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .form__wrapper:last-child {

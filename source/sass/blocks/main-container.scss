@@ -1,6 +1,6 @@
 .main-container__wrapper {
-  background-color: rgba(238, 238, 238, 1);
-  background-image: url("../img/mobile/background-index.jpg");
+  background-color: rgba(164, 190, 243, 0.7);
+  background-image: url("../img/mobile/background-index.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -11,11 +11,11 @@
   display: block;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/mobile/background-index@2x.jpg");
+    background-image: url("../img/mobile/background-index@2x.webp");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/mobile/back-tablet.jpg");
+    background-image: url("../img/mobile/back-tablet.webp");
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding-top: 70px;
@@ -24,22 +24,22 @@
     height: 518px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobile/back-tablet@2x.jpg");
+      background-image: url("../img/mobile/back-tablet@2x.webp");
       background-size: 1200px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/mobile/back-desktop.jpg");
+    background-image: url("../img/mobile/back-desktop.webp");
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: 1200px auto;
-    padding-top: 0;
+    padding-top: 74px;
     height: 518px;
     padding-bottom: 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobile/back-desktop@2x.jpg");
+      background-image: url("../img/mobile/back-desktop@2x.webp");
     }
   }
 }
@@ -71,7 +71,7 @@
 // Catalog html //
 .main-container__wrapper-catalog {
   background-color: rgba(238, 238, 238, 1);
-  background-image: url("../img/mobile/back-mob.jpg");
+  background-image: url("../img/mobile/back-mob.webp");
   background-repeat: no-repeat;
   background-position: 100% -56px;
   background-size: 100% auto;
@@ -82,11 +82,11 @@
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/mobile/back-mob@2x.jpg");
+    background-image: url("../img/mobile/back-mob@2x.webp");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/mobile/cat-tablet.jpg");
+    background-image: url("../img/mobile/cat-tablet.webp");
     margin-bottom: 59px;
     padding-top: 85px;
     padding-left: 0;
@@ -95,7 +95,7 @@
     background-position: 100% -50px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobile/cat-tablet@2x.jpg");
+      background-image: url("../img/mobile/cat-tablet@2x.webp");
     }
   }
 
@@ -104,10 +104,10 @@
     padding-top: 91px;
     height: 301px;
     margin-bottom: 0;
-    background-image: url("../img/mobile/cat-desktop.jpg");
+    background-image: url("../img/mobile/cat-desktop.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobile/cat-desktop@2x.jpg");
+      background-image: url("../img/mobile/cat-desktop@2x.webp");
     }
   }
 }
@@ -122,7 +122,7 @@
   height: 57px;
   left: 0;
   bottom: -1px;
-  background-size: 100% auto;
+  background-size: 100%;
 
   @media (min-width: $tablet-width) {
     content: "";
@@ -146,8 +146,8 @@
 }
 
 .main-container__wrapper-form {
-  background-color: rgba(238, 238, 238, 1);
-  background-image: url("../img/mobile/form-mob.jpg");
+  background-color: rgba(238, 238, 238, 0.8);
+  background-image: url("../img/mobile/form-mob.webp");
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-height: 159px;
@@ -157,11 +157,11 @@
   padding-top: 52px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/mobile/form-mob@2x.jpg");
+    background-image: url("../img/mobile/form-mob@2x.webp");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/mobile/form-tablet.jpg");
+    background-image: url("../img/mobile/form-tablet.webp");
     min-height: 290px;
     background-position: bottom;
     padding-left: 3px;
@@ -169,12 +169,12 @@
     width: 100%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobile/form-tablet@2x.jpg");
+      background-image: url("../img/mobile/form-tablet@2x.webp");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/mobile/form-desktop.jpg");
+    background-image: url("../img/mobile/form-desktop.webp");
     background-position: 100% -56px;
     height: 301px;
     padding-top: 101px;
@@ -182,7 +182,7 @@
     padding-right: 4px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobile/form-desktop@2x.jpg");
+      background-image: url("../img/mobile/form-desktop@2x.webp");
     }
   }
 }
@@ -192,17 +192,17 @@
   background-image: url("../img/mobile/into-mob.svg");
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 63px;
+  min-height: 57px;
   left: 0;
-  bottom: -6px;
-  background-size: 100% auto;
+  bottom: 0;
+  background-size: 100% 100%;
   display: block;
   position: absolute;
 
   @media (min-width: $tablet-width) {
     content: "";
     background-image: url("../img/mobile/intro-form.svg");
-    top: 234px;
+    bottom: -1px;
     background-size: 100% auto;
   }
 
@@ -230,7 +230,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 5px;
     width: 500px;
-    height: 500px;
+    height: 350px;
   }
 }
 

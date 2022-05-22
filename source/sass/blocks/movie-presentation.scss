@@ -59,6 +59,7 @@
 .movie-presentation__image {
   width: 100%;
   display: block;
+  background-color: rgb(184, 166, 172);
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -91,6 +92,11 @@
   left: 53%;
   bottom: 34%;
   transform: translateX(-50%);
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #669ec0;
+  }
 
   @media (min-width: $tablet-width) {
     left: 50%;
