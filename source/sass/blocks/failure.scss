@@ -9,6 +9,10 @@
   z-index: 1;
 }
 
+.page__body-failure--close {
+  display: none;
+}
+
 .failure__wrapper {
   position: relative;
   margin: 0 auto;

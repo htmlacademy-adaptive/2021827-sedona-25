@@ -26,6 +26,11 @@
   left: 50%;
   z-index: 1;
 
+  &:focus-visible {
+    box-shadow: 0 0 0 2px #80b9e0;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     display: block;

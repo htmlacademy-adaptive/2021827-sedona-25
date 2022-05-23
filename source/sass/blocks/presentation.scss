@@ -346,6 +346,10 @@
     display: none;
   }
 
+  .presentation__information-space--4 {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 21px;

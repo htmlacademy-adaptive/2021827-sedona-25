@@ -100,6 +100,11 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px #9ea1a3;
+    outline: 0;
+  }
 }
 
 .main-nav--closed .main-nav__list {
@@ -131,7 +136,7 @@
   display: none;
 }
 
-.main-nav--nojs .site-list {
+.main-nav--nojs .main-nav__list {
   display: block;
 }
 
@@ -140,14 +145,6 @@
   min-height: 0;
 }
 
-.main-nav--nojs .main-nav__list {
-  display: block;
-}
-
 .main-nav--nojs {
   position: static;
-}
-
-.main-nav--nojs .main-header__wrapper {
-  display: none;
 }

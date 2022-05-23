@@ -36,9 +36,15 @@
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link site-list__link--current" href="#">Главная</a>
             </li>
-            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фото и Видео</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">html Academy</a></li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Фото и Видео</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">html Academy</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -48,7 +54,8 @@
         <h1 class="visually-hidden">Туристический городок Седона.</h1>
         <img class="main-container__images" src="./img/mobile/welcome-sedona.svg" width="282" height="214"
           alt="Welcome to Sedona.">
-      </div><!--  Заголовок 2 уровня  -->
+      </div>
+      <!--  Заголовок 2 уровня  -->
       <section class="main-container__presentation presentation">
         <!-- Обертка для центрирования -->
         <div class="presentation__wrapper container">
@@ -104,9 +111,8 @@
           <li class="presentation__item presentation__item--2">
             <div class="presentation__wrapper-blue">
               <div class="presentation__container presentation__container--2 presentation__container-order">
-                <h3 class="presentation__title-blue">Там есть&nbsp;<br>мост дьявола</h3><span
-                  class="presentation__number">—
-                  №2 —</span>
+                <h3 class="presentation__title-blue">Там есть&nbsp;<br>мост дьявола</h3>
+                <span class="presentation__number">—№2 —</span>
                 <p class="presentation__information">Да, по нему можно&nbsp;<br
                     class="presentation__information-space--2">пройти!<br
                     class="presentation__information-space">&nbsp;Если вы&nbsp;<br
@@ -158,9 +164,12 @@
         <h2 class="search-hotel__title">Заинтересовались?</h2>
         <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
-        <!--  класc для состояния disabled--> <a class="search-hotel__button" href="#"><span
-            class="search-hotel__button-title">найти гостиницу</span></a>
-      </section><!-- Maps -->
+        <!--  класc для состояния disabled-->
+        <a class="search-hotel__button" href="#">
+          <span class="search-hotel__button-title">найти гостиницу</span>
+        </a>
+      </section>
+      <!-- Maps -->
       <section class="main-container__maps maps">
         <h2 class="visually-hidden">Карта.</h2>
         <div class="maps__wrapper"><iframe
@@ -184,29 +193,42 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer container"><a class="main-footer__hashtag">#VISITSEDONA</a>
+    <footer class="main-footer container">
+      <a class="main-footer__hashtag">#VISITSEDONA</a>
       <ul class="main-footer__social social">
-        <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><svg
-              class="social__link-icons" width="24" height="14">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <svg class="social__link-icons" width="24" height="14">
               <use xlink:href="img/sprite.svg#social__vk"></use>
-            </svg> <span class="visually-hidden">Мы Вконтакте.</span>
+            </svg>
+            <span class="visually-hidden">Мы Вконтакте.</span>
           </a>
         </li>
-        <li class="social__item"><a class="social__link social__link--telegram" href="#">
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">
             <svg class="social__link-icons" width="22" height="18">
               <use xlink:href="img/sprite.svg#social__telegram"></use>
-            </svg> <span class="visually-hidden">Мы в телеграме.</span></a></li>
-        <li class="social__item"><a class="social__link social__link--youtube"
-            href="https://www.youtube.com/user/htmlacademyru"><svg class="social__link-icons social__link-youtube"
-              width="20" height="14">
+            </svg>
+            <span class="visually-hidden">Мы в телеграме.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg class="social__link-icons social__link-youtube" width="20" height="14">
               <use xlink:href="img/sprite.svg#social__youtube"></use>
-            </svg> <span class="visually-hidden">Мы в ютубе.</span></a></li>
+            </svg>
+            <span class="visually-hidden">Мы в ютубе.</span>
+          </a>
+        </li>
       </ul>
-      <div class="main-footer__academy academy"><a class="academy__link" href="https://htmlacademy.ru"><b
-            class="academy__text">Разработано</b><!-- Разработано --> <svg class="academy__link-svg" width="27"
+      <div class="main-footer__academy academy">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="academy__text">Разработано</b><!-- Разработано --> <svg class="academy__link-svg" width="27"
             height="35">
             <use xlink:href="img/sprite.svg#social__academy"></use>
-          </svg></a></div>
+          </svg>
+        </a>
+      </div>
     </footer>
   </div>
   <script src="./js/script.js"></script>
