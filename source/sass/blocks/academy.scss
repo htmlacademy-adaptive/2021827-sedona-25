@@ -34,16 +34,6 @@
   }
 }
 
-.main-footer__academy--form {
-  @media (min-width: $tablet-width) {
-    margin-left: calc(128 / 768 * 100%);
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: calc(280 / 1200 * 100%);
-  }
-}
-
 .academy__link {
   position: relative;
   list-style-type: none;

@@ -71,7 +71,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  margin-right: 4px;
+  margin-right: 9px;
 
   &:focus-visible {
     outline: none;
@@ -162,7 +162,11 @@
 }
 
 .tourist-areas__wrapper-3--3 {
-  padding-left: 7px;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 7px;
+  }
 }
 
 .tourist-areas__wrapper {
