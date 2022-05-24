@@ -138,6 +138,10 @@
 
 .main-nav--nojs .main-nav__list {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav--nojs .main-nav__wrapper {

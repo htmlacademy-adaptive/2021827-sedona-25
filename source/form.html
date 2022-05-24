@@ -6,10 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy</title>
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preload" href="./fonts/ptsans.woff" as="font">
-  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
-  <link rel="preload" href="./fonts/ptsansbold.woff" as="font">
-  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.png" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png">
@@ -79,8 +77,9 @@
             <legend class="form__contacts-title">Контактная информация:</legend>
             <label class="form__contacts-naming" for="auth-contacts">Контактный телефон*:</label>
             <div class="form__contacts-wrapper">
-              <input class="form__contacts-name" type="number" id="auth-contacts" name="auth-record" required
-                placeholder="Введите телефон"> <span class="form__contacts-button"></span>
+              <input class="form__contacts-name" type="tel" id="auth-contacts" name="auth-record" required
+                placeholder="Введите телефон">
+                 <span class="form__contacts-button"></span>
             </div>
             <div class="form__contacts-wrapper-mail">
               <label class="form__contacts-naming" for="auth-mail">Электронная почта*:</label>
@@ -212,7 +211,7 @@
       </div>
     </footer>
   </div>
-  <div class="page__body-failure page__body-failure--close failure">
+  <div class="page__body-failure failure--close failure">
     <div class="failure__wrapper">
       <h2 class="failure__header">Что-то пошло<br>не так!</h2>
       <p class="failure__intro">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -221,7 +220,7 @@
       </button>
     </div>
   </div>
-  <div class="page__body-success success page__body-success--close">
+  <div class="page__body-success success success--close">
     <div class="success__wrapper">
       <h2 class="success__header">Ваш отзыв отправлен!</h2>
       <p class="success__intro">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>в ближайшее время мы
