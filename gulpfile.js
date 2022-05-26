@@ -10,8 +10,9 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import del from 'del';
+// import svgstore from 'gulp-svgstore';
+
 
 // Styles
 
@@ -28,7 +29,7 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-// HTML
+// HTMLL
 const html = () => {
 return gulp.src('source/*.html')
  .pipe(htmlmin({ collapseWhitespace: true }))
@@ -71,7 +72,7 @@ const svg = () =>
  .pipe(svgo())
  .pipe(gulp.dest('build/img'));
 
-// Для проверяющего. Спрайт есть (он скопирован 92 строка)
+//
 //  const sprite = () => {
 //   return gulp.src('source/img/sprite.svg')
 //   .pipe(svgo())
