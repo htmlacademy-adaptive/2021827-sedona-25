@@ -28,7 +28,7 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-// HTML
+// HTMLL
 const html = () => {
 return gulp.src('source/*.html')
  .pipe(htmlmin({ collapseWhitespace: true }))
